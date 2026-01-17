@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visual Novel Ultimate - Multi-Character Edition (with Audio)</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- 🔥 네 커스텀 CSS (이게 빠져있었음) -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="audio-gate" class="full-overlay bg-black active">
+  <h2 class="text-white text-3xl font-bold mb-8">환영합니다</h2>
+  <button class="choice-btn" onclick="unlockAudioGate()">
+    CLICK TO START
+  </button>
+</div>
+<div class="game-wrapper">
+    <div class="game-container" id="game-window">
+        <div id="bg-layer"></div>
+        <div id="cg-layer"></div>
+        
+        <!-- 캐릭터 배치 레이어 -->
+        <div id="character-layer"></div>
+        
+        <div id="choice-container" class="hidden"></div>
+
+        <div id="ui-layer" class="hidden opacity-0 transition-opacity duration-500">
+            <div class="dialogue-box" id="db-trigger">
+                <div id="speaker-name" class="text-indigo-400 font-bold text-xl mb-3 h-7"></div>
+                <div id="dialogue-text" class="text-lg leading-relaxed text-gray-100"></div>
+                <div id="click-prompt" class="absolute bottom-6 right-10 text-xs text-indigo-400 animate-pulse hidden">CLICK TO NEXT</div>
+            </div>
+            
+            <div class="bottom-menu">
+                <button onclick="Save.openSaveMenu()">SAVE</button>
+                <button onclick="Save.openLoadMenu()">LOAD</button>
+                <button onclick="Story.togglePause()">MENU</button>
+            </div>
+        </div>
+
+        <!-- 모달 및 메뉴 생략 (이전 버전과 동일하게 유지) -->
+        <div id="custom-modal" class="full-overlay bg-black/80 backdrop-blur-md">
+            <div class="bg-[#111] border border-white/10 p-10 rounded-[30px] w-[500px] max-w-[90%] shadow-2xl">
+                <h3 id="modal-title" class="text-2xl font-bold text-white mb-6 text-center"></h3>
+                <div id="slot-list" class="mb-8"></div>
+                <div class="flex justify-center gap-4" id="modal-buttons"></div>
+            </div>
+        </div>
+
+        <div id="pause-menu" class="full-overlay bg-black/95">
+            <h2 class="text-5xl font-bold text-white mb-16 tracking-widest italic">PAUSED</h2>
+            <button class="choice-btn" onclick="Story.togglePause()">계속하기</button>
+            <button class="choice-btn" onclick="Story.resetToMenu()">타이틀로 이동</button>
+        </div>
+
+        <div id="ending-layer" class="full-overlay bg-black">
+            <h2 id="ending-title" class="text-6xl font-black text-white mb-6"></h2>
+            <p id="ending-desc" class="text-gray-400 text-xl mb-16 text-center px-10"></p>
+            <button class="choice-btn" onclick="Story.resetToMenu()">처음으로 돌아가기</button>
+        </div>
+
+        <div id="main-menu" class="full-overlay menu-overlay active">
+            <h1 class="title-logo italic">LOVE 0f PI</h1>
+            <button class="choice-btn" onclick="Story.handleStartButton()">처음부터</button>
+            <button class="choice-btn" onclick="Story.openLoadMenu()">이어하기</button>
+        </div>
+    </div>
+  
+</div>
+</body>
+<script type="module" src="js/main.js"></script>
+
+</html>
