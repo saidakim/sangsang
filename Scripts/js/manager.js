@@ -1,25 +1,51 @@
 
 export const Manager = {
+    // 기본값 설정 (초기화 시 사용할 값들)
+    defaultStats: { social: 10, vocab: 10, charm: 10, stress: 0 },
     stats: { social: 10, vocab: 10, charm: 10, stress: 0 },
     day: 1,
-    Story: null,
-    
-    // 활동 데이터
-    activities: [
-        { name: "운동장 파이 외우기", effect: { vocab: 5, stress: 10 }, desc: "어휘력 상승, 스트레스 상승" },
-        { name: "길냥이 밥 주기", effect: { charm: 5, social: 2 }, desc: "매력 상승, 사회성 조금 상승" },
-        { name: "과방에서 잠자기", effect: { stress: -20 }, desc: "스트레스 대폭 감소" },
-        { name: "동아리 면접 연습", effect: { social: 7, stress: 5 }, desc: "사회성 상승, 스트레스 상승" }
-    ],
 
-    updateUI() {
-        document.getElementById('stat-social').innerText = this.stats.social;
-        document.getElementById('stat-vocab').innerText = this.stats.vocab;
-        document.getElementById('stat-charm').innerText = this.stats.charm;
-        document.getElementById('stat-stress').innerText = this.stats.stress;
-        document.getElementById('current-day').innerText = `DAY ${this.day}`;
+    // [추가] 스텟 및 날짜 초기화 함수
+    reset() {
+        console.log("매니저 데이터 초기화");
+        this.stats = { ...this.defaultStats }; // 복사본으로 초기화
+        this.day = 1;
+        this.updateUI();
     },
 
+    // [추가] 데이터 강제 설정 함수 (로드용)
+    setData(data) {
+        if (data.stats) this.stats = { ...data.stats };
+        if (data.day) this.day = data.day;
+        this.updateUI();
+    },
+
+    updateUI() {
+        // null 체크 추가 (UI가 없을 때 에러 방지)
+        const sSocial = document.getElementById('stat-social');
+        if (sSocial) sSocial.innerText = this.stats.social;
+        
+        const sVocab = document.getElementById('stat-vocab');
+        if (sVocab) sVocab.innerText = this.stats.vocab;
+        
+        const sCharm = document.getElementById('stat-charm');
+        if (sCharm) sCharm.innerText = this.stats.charm;
+        
+        const sStress = document.getElementById('stat-stress');
+        if (sStress) sStress.innerText = this.stats.stress;
+        
+        const cDay = document.getElementById('current-day');
+        if (cDay) cDay.innerText = `DAY ${this.day}`;
+    },
+    
+    activities: [
+        { name: "운동장 파이 외우기", effect: { vocab: 5, stress: -10 }, desc: "어휘력 상승, 스트레스 하강" },
+        { name: "길냥이 밥 주기", effect: { charm: 5, social: 2 }, desc: "매력 상승, 사회성 조금 상승" },
+        { name: "뻐끔", effect: { stress: -1 }, desc: "스트레스 소폭 감소" },
+        { name: "동아리 면접 연습", effect: { social: 7, stress: 5 }, desc: "사회성 상승, 스트레스 상승" },
+        { name: "스도쿠 풀기", effect: { charm: 7, stress: 5 }, desc: "매력 상승, 스트레스 상승" },
+        { name: "길냥이 밥 뺏기", effect: { social: -5, stress: -10 }, desc: "사회성 하강, 스트레스 하강" }
+    ],
     // manager.js
 
     showActivities() {
@@ -112,12 +138,16 @@ export const Manager = {
         chat.innerHTML = ""; // 이전 대화 비우기
         
         // 스텟에 따른 메시지 분기
-        let msg = "안녕 가희야, 뭐해?";
-        if (this.stats.vocab > 30) msg = "장가희 씨, 혹시 시간 되시면 파이(π)의 소수점 100자리까지 같이 외워보실래요?";
-        if (this.stats.stress > 50) msg = "아... 죽겠다... 냥코나 하러 갈까...";
-
+        let msg = "아";
+        if (this.stats.social <= 5) msg = "야이 씨발련아";
+        if (this.stats.social > 5) 
+        {
+            if (this.stats.vocab <= 15) msg = "어법.. 어법버.. 어.. ";
+            if (this.stats.vocab > 15) msg = "안녕?";
+        }
         this.addChatMessage("나", msg);
         
+        this.addChatMessage("장가희", "북까");
         // 폰 레이어 표시 (강제 스타일 적용)
         phoneLayer.classList.remove('hidden');
         phoneLayer.classList.add('active');
@@ -134,11 +164,13 @@ export const Manager = {
     },
 
     nextStep() {
-        this.day++;
+        this.day--;
         this.updateUI();
         // 특정 날짜가 되면 스토리를 강제 진행
-        if (this.day === 3) {
-            this.switchToStory("chicken"); // Day 3에 치킨집 스토리 발생
+        if (this.day === 0) {
+            UI.showNotice("휴일이 종료되었습니다.\n학교로 돌아갑니다.", () => {
+            this.switchToStory("chicken"); // scenario.js의 다음 장면 ID
+        });
         }
     },
 

@@ -31,8 +31,23 @@ export const Story = {
     startGame() {
         this.isPlaying = true;
         this.isPaused = false;
-        document.querySelectorAll('.full-overlay').forEach(el => el.classList.remove('active'));
-        document.getElementById('ui-layer').classList.remove('hidden', 'opacity-0');
+
+        // 1. 모든 오버레이(메뉴, 육성 화면 등) 제거
+        document.querySelectorAll('.full-overlay').forEach(el => {
+            el.classList.remove('active');
+        });
+
+        // 2. [핵심] UI 레이어(대화창) 복구
+        const uiLayer = document.getElementById('ui-layer');
+        uiLayer.classList.remove('hidden', 'opacity-0');
+        uiLayer.style.display = "block"; // 또는 flex (CSS 설정에 따라)
+        uiLayer.style.opacity = "1";
+        uiLayer.style.pointerEvents = "auto";
+
+        // 3. 캐릭터 레이어 초기화 (이전 육성 시 남은 잔상 제거)
+        document.getElementById('character-layer').innerHTML = "";
+
+        // 4. 장면 렌더링
         this.renderScene();
     },
 
@@ -137,7 +152,9 @@ export const Story = {
         }
         if (data.isEnding) { this.showEnding(data); return; }
         if (data.next === "GOTO_MANAGEMENT") {
-            this.Manager.switchToManagement();
+            UI.showNotice("스토리가 종료되었습니다.\n자기관리를 시작합니다.", () => {
+        this.Manager.switchToManagement();
+    });
             return;
         }
         if (data.next) { 
@@ -167,5 +184,16 @@ export const Story = {
       this.audioManager.stopBGM();
       this.audioManager.playBGM("bgm_menu");
     },
-    handleStartButton() { this.audioManager.playSFX("sfx_click");this.currentScene = "start"; this.affinity = 0; this.startGame(); }
+    handleStartButton() {
+        this.audioManager.playSFX("sfx_click");
+        
+        // [추가] 게임 시작 시 매니저 데이터 초기화
+        if (this.manager) {
+            this.manager.reset();
+        }
+        
+        this.currentScene = "start";
+        this.affinity = 0;
+        this.startGame();
+    },
 };

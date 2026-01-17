@@ -251,3 +251,37 @@
 #choice-container:not(.hidden) {
     display: flex !important;
 }
+
+#ui-layer {
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+#ui-layer.hidden {
+    display: none; /* hidden일 때는 자리를 차지하지 않음 */
+    opacity: 0;
+}
+
+#notice-modal {
+    transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+    opacity: 0;
+    visibility: hidden;
+}
+
+#notice-modal.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+#notice-modal.active > div {
+    animation: modal-pop 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+@keyframes modal-pop {
+    from { transform: scale(0.8); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
+}
+
+/* 텍스트 줄바꿈 유지 */
+#notice-text {
+    white-space: pre-line;
+}
