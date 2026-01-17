@@ -1,4 +1,3 @@
-// js/game.js
 import { scenario } from "./scenario.js";
 import { assets } from "./assets.js";
 export const Story = {
@@ -9,6 +8,7 @@ export const Story = {
     isPlaying: false, 
     isPaused: false,
     audioManager: null,
+    Manager: null,
 
 
   
@@ -136,7 +136,14 @@ export const Story = {
             return;
         }
         if (data.isEnding) { this.showEnding(data); return; }
-        if (data.next) { this.currentScene = data.next; this.renderScene(); }
+        if (data.next === "GOTO_MANAGEMENT") {
+            this.Manager.switchToManagement();
+            return;
+        }
+        if (data.next) { 
+            this.currentScene = data.next; 
+            this.renderScene(); 
+        }
     },
 
     showEnding(data) {

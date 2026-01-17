@@ -475,18 +475,6 @@ export const scenario = {
   ],
   speaker: " ",
   text: "그는 이어폰을 꺼내 다시 노래를 틀었다.",
-  next: "check_ending"
-},
-
-  
-  
-        "path_kind": {
-            chars: [
-                { name: "제상후", image: "sang_happy", focus: true, eff: "bounce" },
-                { name: "박미나", image: "mina_happy", focus: true, eff: "bounce" }
-            ],
-            speaker: "제상후",
-            text: "하하, 역시 우리 친구라니까! 좋아, 그럼 셋이서 점심 먹으러 갈까?",
-            next: "check_ending"
-        }
-    }
+  next: "GOTO_MANAGEMENT"
+}
+}

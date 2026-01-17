@@ -33,7 +33,27 @@
         #bg-layer { position: absolute; inset: 0; background-size: cover; background-position: center; transition: background-image 1s ease-in-out; z-index: 10; background-color: #111; }
         #cg-layer { position: absolute; inset: 0; z-index: 30; background-size: cover; background-position: center; opacity: 0; transition: opacity 0.8s ease; pointer-events: none; background-color: rgba(0,0,0,0.5); }
         #cg-layer.active { opacity: 1; pointer-events: auto; }
-        
+        /* style.css */
+        #management-layer {
+            display: none;
+            position: absolute;
+            inset: 0;
+            z-index: 800; /* 충분히 높은 번호 */
+            pointer-events: none; /* 기본은 통과 */
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+
+        #management-layer.active {
+            display: flex !important;
+            opacity: 1;
+            pointer-events: auto; /* [핵심] 활성화되었을 때만 클릭 허용 */
+        }
+
+        /* 선택지 컨테이너가 육성 화면 버튼을 가리지 않도록 주의 */
+        #choice-container {
+            z-index: 900; 
+        }
         /* 캐릭터 레이어 (멀티 캐릭터 대응) */
         #character-layer { 
             position: absolute; 
@@ -179,3 +199,55 @@
 
         .slot-item { background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.1); padding: 16px; margin-bottom: 12px; border-radius: 14px; display: flex; justify-content: space-between; align-items: center; cursor: pointer; transition: 0.2s; }
         .slot-item:hover { background: rgba(79, 70, 229, 0.15); border-color: #6366f1; }
+
+        /* style.css 하단에 추가 */
+
+/* style.css */
+
+#phone-layer {
+    z-index: 3000 !important; /* 모든 것보다 위 */
+    display: none;
+}
+
+#phone-layer.active {
+    display: flex !important;
+}
+
+/* 채팅창 영역이 버튼을 가리지 않도록 설정 */
+#chat-content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    /* 스크롤이 생겨도 버튼 영역을 침범하지 않음 */
+}
+
+/* [중요] 닫기 버튼이 확실히 클릭되도록 */
+#phone-layer button {
+    cursor: pointer !important;
+    pointer-events: auto !important; /* 클릭 이벤트 강제 허용 */
+}
+
+/* style.css */
+
+/* 육성 레이어의 위치 */
+#management-layer {
+    z-index: 800 !important; /* 육성 화면은 800 */
+}
+
+/* 선택지(활동 목록) 레이어 - 육성 화면보다 높아야 함 */
+#choice-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2000 !important; /* 2000으로 대폭 상승 */
+    display: none; /* 기본 숨김 */
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+/* hidden이 제거되었을 때 확실히 보이게 함 */
+#choice-container:not(.hidden) {
+    display: flex !important;
+}
