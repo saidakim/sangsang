@@ -14,6 +14,14 @@ export const UI = {
             modal.classList.remove('active');
             if (onConfirm) onConfirm();
         };
+    },
+    showHelp() {
+        const helpModal = document.getElementById('help-modal');
+        if (helpModal) {
+            helpModal.classList.add('active');
+        } else {
+            console.error("help-modal 요소를 찾을 수 없습니다.");
+        }
     }
 };
 // window 객체에 등록하여 어디서든 접근 가능하게 함

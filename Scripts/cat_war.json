@@ -1,0 +1,120 @@
+{
+  "start": {
+    "bg": "kaist_bg",
+    "bgm": "bgm_warrior",
+    "speaker": " ",
+    "text": "밤 11시, 카이스트 서측 기숙사 뒤편. 인적이 끊긴 이곳에 기괴한 그림자 하나가 어른거린다.",
+    "next": "cat_war_2"
+  },
+  "cat_war_2": {
+    "bg": "kaist_bg",
+    "chars": [
+      { "name": "제상후", "image": "sang_normal", "focus": true }
+    ],
+    "speaker": "제상후",
+    "text": "흐흐흐... 오늘의 '야식 파밍' 장소는 여기다. 냄새가 난다. 강력한 울슈레의 준냄새가...",
+    "next": "cat_war_3"
+  },
+  "cat_war_3": {
+    "bg": "kaist_bg",
+    "chars": [
+      { "name": "길고양이", "image": "cat_normal", "focus": true, "eff": "zoom" },
+      { "name": "제상후", "image": "sang_normal", "focus": false }
+    ],
+    "speaker": "길고양이",
+    "sfx": "sfx_cat_low_growl",
+    "text": "그르르릉... (번역: 인간, 여긴 내 구역이다. 발을 들이지 마라.)",
+    "next": "cat_war_4"
+  },
+  "cat_war_4": {
+    "bg": "kaist_bg",
+    "chars": [
+      { "name": "길고양이", "image": "cat_normal", "focus": false },
+      { "name": "제상후", "image": "sang_angry", "focus": true, "eff": "shake" }
+    ],
+    "speaker": "제상후",
+    "text": "뭐? '고작 흑슬리도 없는 주제에 캔을 노리냐'고? 네놈, 내 냥코 실력을 건드렸노!",
+    "next": "cat_war_5"
+  },
+  "cat_war_5": {
+    "bg": "kaist_bg",
+    "chars": [
+      { "name": "제상후", "image": "sang_angry", "focus": true, "eff": "bounce" }
+    ],
+    "speaker": "제상후",
+    "text": "나 제상후, 냥코대전쟁 유저 랭크를 걸고 네놈을 처단하겠다! 뚠뚠뚠뚠!!! 이건 현실 냥코다아아아악!!!!",
+    "next": "cat_war_6"
+  },
+  "cat_war_6": {
+    "bg": "kaist_bg",
+    "chars": [
+      { "name": "길고양이", "image": "cat_angry", "focus": true, "eff": "shake" },
+      { "name": "제상후", "image": "sang_normal", "focus": false }
+    ],
+    "speaker": " ",
+    "text": "길고양이가 앞발을 휘두르며 선제공격을 날렸다. 제상후는 개뽀록으로 피해놓고 멋있는 표정을 짓는다.",
+    "next": "cat_war_7"
+  },
+  "cat_war_7": {
+    "bg": "kaist_bg",
+    "chars": [
+      { "name": "제상후", "image": "sang_happy", "focus": true, "eff": "zoom" }
+    ],
+    "speaker": "제상후",
+    "text": "느리다! 그건 공격이 아니라 애교 수준이노! '장풍'의 길을 보여주마! 깍!깍!깍!",
+    "next": "cat_war_8"
+  },
+  "cat_war_8": {
+    "bg": "kaist_bg",
+    "chars": [
+      { "name": "길고양이", "image": "cat_normal", "focus": true, "eff": "shake" },
+      { "name": "제상후", "image": "sang_normal", "focus": false }
+    ],
+    "speaker": " ",
+    "text": "상후가 바닥에 놓인 참치캔을 향해 슬라이딩을 시전했다. 고양이는 인간의 광기에 질려 뒤로 물러난다.",
+    "next": "cat_war_9"
+  },
+  "cat_war_9": {
+    "bg": "kaist_bg",
+    "chars": [
+      { "name": "제상후", "image": "sang_normal", "focus": true }
+    ],
+    "speaker": "제상후",
+    "text": "(짭짭...) 오오... 이것이 전산동 길고양이들이 먹는다는 그 '전설의 통조림'인가.",
+    "next": "cat_war_10"
+  },
+  "cat_war_10": {
+    "bg": "kaist_bg",
+    "chars": [
+      { "name": "제상후", "image": "sang_sad", "focus": true, "eff": "shake" }
+    ],
+    "speaker": "제상후",
+    "text": "맛이... 묘하노. 비린내와 함께 냥코의 영혼이 느껴지는 맛이다아아아악!!!",
+    "next": "cat_war_11"
+  },
+  "cat_war_11": {
+    "bg": "kaist_bg",
+    "chars": [
+      { "name": "길고양이", "image": "cat_staring", "focus": true },
+      { "name": "제상후", "image": "sang_normal", "focus": false }
+    ],
+    "speaker": "길고양이",
+    "text": "야옹... (번역: 저건 내일 아침밥인데... 진짜 다 처먹네 미친놈...)",
+    "next": "cat_war_12"
+  },
+  "cat_war_12": {
+    "bg": "kaist_bg",
+    "chars": [
+      { "name": "제상후", "image": "sang_happy", "focus": true, "eff": "bounce" }
+    ],
+    "speaker": "제상후",
+    "text": "전쟁에서 승리했다노! 완전 승리!! 최고급 통조림 획득!!! 빠바빠바바밤! 깍!깍!깍!깍!",
+    "next": "cat_war_13"
+  },
+  "cat_war_13": {
+    "bg": "kaist_bg",
+    "speaker": " ",
+    "text": "제상후는 빈 캔을 머리에 쓴 채, 어둠 속으로 뚠뚠거리며 사라졌다.",
+    "next": "GOTO_MANAGEMENT"
+  }
+}

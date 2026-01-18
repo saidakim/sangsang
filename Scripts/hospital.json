@@ -1,0 +1,81 @@
+{
+  "start": {
+    "bg": "kaist_night_bg",
+    "bgm": "bgm_stress",
+    "speaker": " ",
+    "text": "제상후는 별일 없었지만 개 큰 스트레스를 받고 병원에 실려왔다.",
+    "next": "hospital_2"
+  },
+  "hospital_2": {
+    "bg": "kaist_night_bg",
+    "chars": [
+      { "name": "제상후", "image": "sang_sad", "focus": true, "eff": "shake" }
+    ],
+    "speaker": "제상후",
+    "text": "3.14... 15... 아니... 냥코 1레벨... 아악!!! 머리가 지오메트리 대쉬 가시처럼 따갑노!!!",
+    "next": "hospital_3"
+  },
+  "hospital_3": {
+    "bg": "kaist_night_bg",
+    "chars": [
+      { "name": "제상후", "image": "sang_sad", "focus": true, "eff": "shake" }
+    ],
+    "speaker": " ",
+    "sfx": "sfx_collapse",
+    "text": "상후는 갑자기 가슴을 부여잡고 '깍! 깍!' 소리를 내며 기숙사 바닥에 쓰러졌다.",
+    "next": "hospital_4"
+  },
+  "hospital_4": {
+    "bg": "hospital_room_bg",
+    "bgm": "bgm_ambulance_siren",
+    "speaker": "구급대원",
+    "text": "환자 상태 확인! 19세, 카이스트생. 입으로 계속 '뚠뚠뚠뚠' 소리를 내며 과호흡 중입니다!",
+    "next": "hospital_5"
+  },
+  "hospital_5": {
+    "bg": "hospital_room_bg",
+    "bgm": "bgm_hospital_silent",
+    "speaker": " ",
+    "text": "잠시 후, 인근 병원 응급실. 상후는 링거를 꽂은 채 간신히 눈을 떴다.",
+    "next": "hospital_6"
+  },
+  "hospital_6": {
+    "bg": "hospital_room_bg",
+    "speaker": "의사",
+    "text": "심각한 스트레스로 인한 일시적 뇌 과부하입니다. 혹시 최근에 무리하게 파이를 외우거나 고양이 캔을 섭취했나요?",
+    "next": "hospital_7"
+  },
+  "hospital_7": {
+    "bg": "hospital_room_bg",
+    "chars": [
+      { "name": "제상후", "image": "sang_sad", "focus": true }
+    ],
+    "speaker": "제상후",
+    "text": "선생님... 냥코는... 제 냥코 계정은 무사한가요?",
+    "next": "hospital_8"
+  },
+  "hospital_8": {
+    "bg": "hospital_room_bg",
+    "speaker": "의사",
+    "text": "무슨 소린지 모르겠군요. 일단 안정이 필요합니다. 간호사! 여기 환자 휴대폰 압수하세요.",
+    "next": "hospital_9"
+  },
+  "hospital_9": {
+    "bg": "hospital_room_bg",
+    "chars": [
+      { "name": "제상후", "image": "sang_angry", "focus": true, "eff": "bounce" }
+    ],
+    "speaker": "제상후",
+    "text": "안돼애애애액!!! 휴대폰 없으면 냥코 출석 보상을 못 받는단 말이노!!! 이건 의료 학대다아아악!!!",
+    "next": "hospital_10"
+  },
+  "hospital_10": {
+    "bg": "hospital_room_bg",
+    "chars": [
+      { "name": "제상후", "image": "sang_sad", "focus": true, "eff": "shake" }
+    ],
+    "speaker": " ",
+    "text": "상후는 병실 침대 위에서 링거 줄을 휘두르며 '장풍!'을 외치다 결국 진정제를 맞고 잠들었다.",
+    "next": "GOTO_MANAGEMENT"
+  }
+}

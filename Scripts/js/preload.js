@@ -1,3 +1,4 @@
+
 // js/preload.js
 export function preloadImages(imageMap, onComplete) {
   const entries = Object.entries(imageMap);

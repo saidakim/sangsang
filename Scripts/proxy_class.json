@@ -1,0 +1,152 @@
+{
+  "start": {
+    "bg": "kaist_night_bg",
+    "bgm": "bgm_suspense",
+    "speaker": " ",
+    "text": "밤늦은 시간, 전산동의 어두운 복도. 제상후는 누군가에게 가로막혀 식은땀을 흘리고 있다.",
+    "next": "proxy_start_2"
+  },
+  "proxy_start_2": {
+    "bg": "kaist_night_bg",
+    "chars": [
+      { "name": "김주헌", "image": "jooheon_angry", "focus": true, "eff": "zoom" },
+      { "name": "제상후", "image": "sang_sad", "focus": false }
+    ],
+    "speaker": "김주헌",
+    "text": "상후야, 내일 '이산구조' 수업 알지? 내가 좀 바빠서 그런데... 네가 대신 들어가야겠다.",
+    "next": "proxy_start_3"
+  },
+  "proxy_start_3": {
+    "bg": "kaist_night_bg",
+    "chars": [
+      { "name": "김주헌", "image": "jooheon_angry", "focus": false },
+      { "name": "제상후", "image": "sang_sad", "focus": true, "eff": "shake" }
+    ],
+    "speaker": "제상후",
+    "text": "아니... 주헌님, 그건 엄연한 학칙 위반이노... 교수님이 눈치채시면 나는 (이)제명이다아아악!!!",
+    "next": "proxy_start_4"
+  },
+  "proxy_start_4": {
+    "bg": "kaist_night_bg",
+    "chars": [
+      { "name": "김주헌", "image": "jooheon_angry", "focus": true },
+      { "name": "제상후", "image": "sang_sad", "focus": false }
+    ],
+    "speaker": "김주헌",
+    "text": "네 냥코대전쟁 계정... 내가 비번 알고 있는 거 잊었어? 삭제 버튼에 손가락 올리기 전에 대답해.",
+    "next": "proxy_start_5"
+  },
+  "proxy_start_5": {
+    "bg": "kaist_night_bg",
+    "chars": [
+      { "name": "제상후", "image": "sang_wow", "focus": true, "eff": "bounce" }
+    ],
+    "speaker": "제상후",
+    "text": "아악!!! 내 울트라 슈퍼 레어들!!! 알겠노! 하겠노! 주헌님으로 빙의하겠노!!!",
+    "next": "proxy_class_1"
+  },
+  "proxy_class_1": {
+    "bg": "kaist_lecture_room",
+    "bgm": "bgm_school",
+    "speaker": " ",
+    "text": "다음 날, 이산구조 강의실. 제상후는 김주헌의 과잠을 억지로 껴입고 구석에 앉아 있다.",
+    "next": "proxy_class_2"
+  },
+  "proxy_class_2": {
+    "bg": "kaist_lecture_room",
+    "chars": [
+      { "name": "제상후", "image": "sang_normal", "focus": true }
+    ],
+    "speaker": "제상후",
+    "text": "3.141592... 침착해라 제상후. 나는 지금 김주헌이다. 나는 일반인이다...",
+    "next": "proxy_class_3"
+  },
+  "proxy_class_3": {
+    "bg": "kaist_lecture_room",
+    "speaker": "교수님",
+    "text": "자, 출석 부릅니다. 김주헌 학생?",
+    "next": "proxy_class_4"
+  },
+  "proxy_class_4": {
+    "bg": "kaist_lecture_room",
+    "chars": [
+      { "name": "제상후", "image": "sang_happy", "focus": true, "eff": "shake" }
+    ],
+    "speaker": "제상후",
+    "text": "뚠뚠뚠뚠!!! 눼!!! 여깁니돠아아아아아아악!!!",
+    "next": "proxy_class_5"
+  },
+  "proxy_class_5": {
+    "bg": "kaist_lecture_room",
+    "speaker": "교수님",
+    "text": "...? 목소리가 왜 그렇죠? 김주헌 학생, 앞으로 나와서 이 문제 좀 풀어보세요.",
+    "next": "proxy_fail_1"
+  },
+  "proxy_fail_1": {
+    "bg": "kaist_lecture_room",
+    "chars": [
+      { "name": "제상후", "image": "sang_normal", "focus": true }
+    ],
+    "speaker": " ",
+    "text": "칠판 앞에 선 상후. 하지만 그의 뇌 구조는 이미 지오메트리 대쉬 브금으로 가득 차 있다.",
+    "next": "proxy_fail_2"
+  },
+  "proxy_fail_2": {
+    "bg": "kaist_lecture_room",
+    "chars": [
+      { "name": "제상후", "image": "sang_normal", "focus": true, "eff": "bounce" }
+    ],
+    "speaker": "제상후",
+    "text": "이건... 게이뭐노.... 하나도 알 수가 없노... 아악!!! 내 냥코대전쟁 울슈레들이여..",
+    "next": "proxy_fail_3"
+  },
+  "proxy_fail_3": {
+    "bg": "kaist_lecture_room",
+    "chars": [
+      { "name": "제상후", "image": "sang_happy", "focus": true, "eff": "shake" }
+    ],
+    "speaker": " ",
+    "text": "상후는 분필을 잡고 칠판에 수식 대신 냥코대전쟁의 '모히칸 고양이 빌더'를 그리기 시작했다.",
+    "next": "proxy_fail_4"
+  },
+  "proxy_fail_4": {
+    "bg": "kaist_lecture_room",
+    "speaker": "교수님",
+    "text": "자네... 누구야? 주헌이는 이런 식으로 그림 그리는 애가 아닐 텐데?",
+    "next": "proxy_fail_5"
+  },
+  "proxy_fail_5": {
+    "bg": "kaist_lecture_room",
+    "chars": [
+      { "name": "제상후", "image": "sang_sad", "focus": true, "eff": "shake" }
+    ],
+    "speaker": "제상후",
+    "text": "아악!!! 교수님 죄송하노!!! 김주헌은 사실 냥코 칠복사신에게 납치당했습뉘다아아악!!!",
+    "next": "proxy_end_1"
+  },
+  "proxy_end_1": {
+    "bg": "kaist_bg",
+    "bgm": "bgm_off",
+    "speaker": " ",
+    "text": "잠시 후, 복도로 쫓겨난 제상후의 핸드폰에 불이 나기 시작한다.",
+    "next": "proxy_end_2"
+  },
+  "proxy_end_2": {
+    "bg": "kaist_bg",
+    "chars": [
+      { "name": "상 폰", "image": "sang_phone_alert", "focus": true, "eff": "shake" }
+    ],
+    "speaker": "상 폰",
+    "text": "[카톡: 김주헌] 제상후, 너 지금 F학점 확정 문자 왔거든? 내 계정은 몰라도 네 냥코 계정은 오늘 제삿날이다.",
+    "next": "proxy_end_3"
+  },
+  "proxy_end_3": {
+    "bg": "kaist_bg",
+    "chars": [
+      { "name": "제상후", "image": "sang_angry", "focus": true, "eff": "bounce" }
+    ],
+    "speaker": "제상후",
+    "text": "안돼애애애액!!! 내 울슈레어어어어어!!! 김주헌 네놈!!! 장풍이나 받으세노!!! 깍!깍!깍!",
+    "next": "GOTO_MANAGEMENT"
+  }
+}

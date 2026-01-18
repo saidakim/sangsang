@@ -1,4 +1,3 @@
-import { scenario } from "./scenario.js";
 import { assets } from "./assets.js";
 export const Story = {
     currentScene: "start",
@@ -9,10 +8,37 @@ export const Story = {
     isPaused: false,
     audioManager: null,
     Manager: null,
-
+    scenario: {},      // 현재 로드된 챕터의 데이터가 담김
+    currentChapter: "prologue", 
 
   
-  
+async loadChapter(chapterKey) {
+    try {
+        // 1. manifest.json 위치를 정확히 지정 (루트에 있으면 ./manifest.json)
+        console.log("매니페스트 로드 시도...");
+        const manifestRes = await fetch("./manifest.json"); 
+        
+        if (!manifestRes.ok) throw new Error("manifest.json 파일을 찾을 수 없습니다.");
+        
+        const manifest = await manifestRes.json();
+        const path = manifest.chapters[chapterKey];
+        
+        console.log(`${chapterKey} 데이터 로드 시도: ${path}`);
+        
+        // 2. 시나리오 JSON 로드
+        const response = await fetch(path);
+        
+        if (!response.ok) throw new Error(`${path} 파일을 찾을 수 없습니다.`);
+        
+        this.scenario = await response.json();
+        this.currentChapter = chapterKey;
+        
+        console.log(`챕터 로드 완료: ${chapterKey}`);
+    } catch (e) {
+        console.error("챕터 로드 실패:", e);
+        throw e; // 상위 handleStartButton에서 catch할 수 있게 던짐
+    }
+},
   
     init() { 
       this.log = [];
@@ -52,7 +78,7 @@ export const Story = {
     },
 
     renderScene() {
-        const data = scenario[this.currentScene];
+        const data = this.scenario[this.currentScene];
         if (!data) return;
 
         if (data.script) {
@@ -141,8 +167,12 @@ export const Story = {
 
     next() {
         if (this.isPaused) return;
-        const data = scenario[this.currentScene];
+        const data = this.scenario[this.currentScene];
         if (!data || data.choices) return;
+        if (data.nextChapter) {
+        this.changeChapter(data.nextChapter, data.nextScene);
+        return;
+        }
         if (this.isTyping) {
             clearInterval(this.typeTimeout);
             document.getElementById('dialogue-text').textContent = data.text;
@@ -184,16 +214,25 @@ export const Story = {
       this.audioManager.stopBGM();
       this.audioManager.playBGM("bgm_menu");
     },
-    handleStartButton() {
+    async handleStartButton() {
         this.audioManager.playSFX("sfx_click");
         
-        // [추가] 게임 시작 시 매니저 데이터 초기화
-        if (this.manager) {
-            this.manager.reset();
+        // 1. 매니저 데이터 초기화 (대문자 Manager 확인)
+        if (this.Manager) {
+            this.Manager.reset();
         }
-        
-        this.currentScene = "start";
-        this.affinity = 0;
-        this.startGame();
+
+        try {
+            // 2. 시작 챕터 로드 (manifest.json을 먼저 읽고 prologue를 가져옴)
+            // 파일이 루트에 있다면 경로를 "./manifest.json"으로 수정하세요.
+            await this.loadChapter("prologue"); 
+            
+            this.currentScene = "start";
+            this.affinity = 0;
+            this.startGame();
+        } catch (e) {
+            console.error("게임 시작 중 오류:", e);
+            alert("시나리오 파일을 불러오지 못했습니다.");
+        }
     },
 };

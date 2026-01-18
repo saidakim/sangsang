@@ -1,0 +1,105 @@
+{
+  "start": {
+    "bg": "kaist_bg",
+    "bgm": "bgm_peaceful",
+    "speaker": " ",
+    "text": "어느 오후, 상후는 광합성을 하기 위해 카이스트 근처를 배회하고 있다.",
+    "next": "sparrow_2"
+  },
+  "sparrow_2": {
+    "bg": "kaist_bg",
+    "chars": [
+      { "name": "제상후", "image": "sang_normal", "focus": true }
+    ],
+    "speaker": "제상후",
+    "text": "3.14159265...(까먹음) 역시 산책은 파이를 외우면서 해야 제맛이지.",
+    "next": "sparrow_3"
+  },
+  "sparrow_3": {
+    "bg": "kaist_bg",
+    "chars": [
+      { "name": "참새", "image": "sparrow_normal", "focus": true, "eff": "bounce" },
+      { "name": "제상후", "image": "sang_normal", "focus": false }
+    ],
+    "speaker": "참새",
+    "sfx": "sfx_bird_chipping",
+    "text": "짹! 짹짹! (번역: 야, 이 씨발련아.)",
+    "next": "sparrow_4"
+  },
+  "sparrow_4": {
+    "bg": "kaist_bg",
+    "chars": [
+      { "name": "참새", "image": "sparrow_normal", "focus": false },
+      { "name": "제상후", "image": "sang_angry", "focus": true, "eff": "shake" }
+    ],
+    "speaker": "제상후",
+    "text": "뭐야? 방금 이 자식이 나보고 6차 추합이라고 비웃은 거노?",
+    "next": "sparrow_5"
+  },
+  "sparrow_5": {
+    "bg": "kaist_bg",
+    "chars": [
+      { "name": "참새", "image": "sparrow_fly", "focus": true, "eff": "zoom" },
+      { "name": "제상후", "image": "sang_angry", "focus": false }
+    ],
+    "speaker": " ",
+    "text": "참새가 상후의 머리 위를 스치듯 지나가며 깃털 하나를 떨어뜨렸다.",
+    "next": "sparrow_6"
+  },
+  "sparrow_6": {
+    "bg": "kaist_bg",
+    "chars": [
+      { "name": "제상후", "image": "sang_angry", "focus": true, "eff": "bounce" }
+    ],
+    "speaker": "제상후",
+    "text": "이건 명백한 영공 침범이다아아아아악!!! 뚠뚠뚠뚠!!! 장! 풍! 장! 풍!",
+    "next": "sparrow_7"
+  },
+  "sparrow_7": {
+    "bg": "kaist_bg",
+    "chars": [
+      { "name": "제상후", "image": "sang_angry", "focus": true, "eff": "shake" }
+    ],
+    "speaker": " ",
+    "text": "상후는 냥코 대전쟁의 공격 모션을 흉내 내며 참새와 허공 속의 사투를 벌이기 시작했다.",
+    "next": "sparrow_8"
+  },
+  "sparrow_8": {
+    "bg": "kaist_bg",
+    "chars": [
+      { "name": "장가희", "image": "gahi_wow", "focus": true },
+      { "name": "제상후", "image": "sang_angry", "focus": false }
+    ],
+    "speaker": "장가희",
+    "text": "상후야... 이제는 조류랑도 대화를 하는 거야? 제발 학교 명예 좀 생각해 줘...",
+    "next": "sparrow_9"
+  },
+  "sparrow_9": {
+    "bg": "kaist_bg",
+    "chars": [
+      { "name": "장가희", "image": "gahi_wow", "focus": false },
+      { "name": "제상후", "image": "sang_angry", "focus": true }
+    ],
+    "speaker": "제상후",
+    "text": "가희 네놈! 이 참새가 먼저 내 냥코 덱을 비하했다노! 깍!깍!깍!",
+    "next": "sparrow_10"
+  },
+  "sparrow_10": {
+    "bg": "kaist_bg",
+    "chars": [
+      { "name": "장가희", "image": "gahi_sad", "focus": true }
+    ],
+    "speaker": "장가희",
+    "text": "(한숨을 쉬며) 참새는 그냥 짹짹거린 거야... 가자, 내가 새 모이 대신 편의점 치킨 사줄게.",
+    "next": "sparrow_11"
+  },
+  "sparrow_11": {
+    "bg": "kaist_bg",
+    "chars": [
+      { "name": "제상후", "image": "sang_happy", "focus": true, "eff": "bounce" }
+    ],
+    "speaker": "제상후",
+    "text": "치킨? 동족상잔의 비극을 보여주겠다노! 가세노!",
+    "next": "GOTO_MANAGEMENT"
+  }
+}

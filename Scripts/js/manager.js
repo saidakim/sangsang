@@ -163,23 +163,63 @@ export const Manager = {
         document.getElementById('chat-content').appendChild(div);
     },
 
-    nextStep() {
+nextStep() {
         this.day--;
         this.updateUI();
-        // 특정 날짜가 되면 스토리를 강제 진행
+
         if (this.day === 0) {
+            this.day = 2;
+            // UI.showNotice(메시지, 확인버튼클릭시_실행할_함수)
+            if (this.stats.stress >= 50) {
+                UI.showNotice("스트레스가 너무 쌓여 병원에 실려갑니다.\n모든 스텟이 감소합니다.", () => {
+                    this.stats.social = Math.max(0, this.stats.social - 5);
+                    this.stats.vocab = Math.max(0, this.stats.vocab - 5);
+                    this.stats.charm = Math.max(0, this.stats.charm - 5);
+                    this.stats.stress = Math.max(0, this.stats.stress - 20);
+                    this.updateUI();
+                    this.switchToStory("prologue", "hospital_start");
+                });}
+            else if (this.stats.social >= 20 && this.stats.vocab >= 20 && this.stats.charm >= 20) {
+
+            }
+            else{
             UI.showNotice("휴일이 종료되었습니다.\n학교로 돌아갑니다.", () => {
-            this.switchToStory("chicken"); // scenario.js의 다음 장면 ID
-        });
+                // 1. 랜덤하게 이동할 챕터 목록
+                const nextChapters = [ "proxy_class", "cat_war", "sparrow"];
+                const randomIndex = Math.floor(Math.random() * nextChapters.length);
+                const selectedChapter = nextChapters[randomIndex];
+                const startScene = "start";
+
+                console.log(`랜덤 선택된 챕터: ${selectedChapter}`);
+
+                // 2. 챕터를 변경하며 스토리로 복귀 (비동기 처리 고려)
+                this.switchToStory(selectedChapter, startScene);
+            });
+        }
+
         }
     },
 
-    switchToStory(sceneId) {
-        document.getElementById('management-layer').classList.add('hidden');
-        this.Story.currentScene = sceneId;
-        this.Story.startGame();
-    },
+// manager.js 내부
+    async switchToStory(chapterKey, sceneId) {
+        // 1. 육성 화면 숨기기
+        const mgmtLayer = document.getElementById('management-layer');
+        mgmtLayer.classList.remove('active');
+        mgmtLayer.classList.add('hidden');
+        mgmtLayer.style.display = "none";
 
+        try {
+            // 2. 새로운 챕터 파일 로드 (story.js의 함수 호출)
+            await this.Story.loadChapter(chapterKey);
+            
+            // 3. 시작 장면 설정 및 게임 재시작
+            this.Story.currentScene = sceneId;
+            this.Story.startGame();
+        } catch (e) {
+            console.error("새로운 챕터를 불러오는 데 실패했습니다:", e);
+            UI.showNotice("에러: 시나리오 파일을 찾을 수 없습니다.");
+        }
+    },
     switchToManagement() {
         console.log("육성 모드로 전환합니다."); // 연결 확인용
 

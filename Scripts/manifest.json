@@ -1,0 +1,9 @@
+{
+    "chapters": {
+        "prologue": "./prologue.json",
+        "proxy_class": "./proxy_class.json",
+        "cat_war": "./cat_war.json",
+        "sparrow": "./sparrow.json"
+    },
+    "startChapter": "prologue"
+}
