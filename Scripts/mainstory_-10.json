@@ -1,0 +1,109 @@
+{
+  "start": {
+    "bg": "kaist_night_bg",
+    "bgm": "bgm_angry_piano",
+    "speaker": " ",
+    "text": "전산동 복도 한복판. 장가희의 인내심이 마침내 임계점을 돌파했다.",
+    "next": "gahi_punch_2"
+  },
+  "gahi_punch_2": {
+    "bg": "kaist_night_bg",
+    "chars": [
+      { "name": "장가희", "image": "gahi_angry", "focus": true, "eff": "shake" },
+      { "name": "제상후", "image": "sang_happy", "focus": false }
+    ],
+    "speaker": "장가희",
+    "text": "제상후... 너 방금 내 리포트 파일에 냥코 대전쟁 깔았냐? 내 과제 어디 갔어?!",
+    "next": "gahi_punch_3"
+  },
+  "gahi_punch_3": {
+    "bg": "kaist_night_bg",
+    "chars": [
+      { "name": "장가희", "image": "gahi_angry", "focus": false },
+      { "name": "제상후", "image": "sang_happy", "focus": true, "eff": "bounce" }
+    ],
+    "speaker": "제상후",
+    "text": "깍!깍!깍! 가희 네놈, 리포트보다 울슈레 하나가 더 가치 있지 않겠노? 뚠뚠뚠뚠!",
+    "next": "gahi_punch_4"
+  },
+  "gahi_punch_4": {
+    "bg": "kaist_night_bg",
+    "chars": [
+      { "name": "장가희", "image": "gahi_angry", "focus": true, "eff": "zoom" },
+      { "name": "제상후", "image": "sang_happy", "focus": false }
+    ],
+    "speaker": "장가희",
+    "text": "이 씨발 진짜... 오늘 너 죽고 나 죽자!!!",
+    "next": "gahi_punch_5"
+  },
+  "gahi_punch_5": {
+    "bg": "kaist_night_bg",
+    "chars": [
+      { "name": "장가희", "image": "gahi_angry", "focus": true, "eff": "shake" },
+      { "name": "제상후", "image": "sang_hit", "focus": false, "eff": "shake" }
+    ],
+    "speaker": " ",
+    "sfx": "sfx_slap_multiple",
+    "text": "장가희가 들고 있던 70만 원짜리 전공 서적으로 상후의 등짝을 연타하기 시작했다.",
+    "next": "gahi_punch_6"
+  },
+  "gahi_punch_6": {
+    "bg": "kaist_night_bg",
+    "chars": [
+      { "name": "장가희", "image": "gahi_angry", "focus": false },
+      { "name": "제상후", "image": "sang_sad", "focus": true, "eff": "shake" }
+    ],
+    "speaker": "제상후",
+    "text": "아악!!! 아아악!!! 이건 물리적인 학대다아아악!!! 3.1415... 아파세노!!!",
+    "next": "gahi_punch_7"
+  },
+  "gahi_punch_7": {
+    "bg": "kaist_night_bg",
+    "chars": [
+      { "name": "장가희", "image": "gahi_normal", "focus": true, "eff": "zoom" },
+      { "name": "제상후", "image": "sang_sad", "focus": false }
+    ],
+    "speaker": "장가희",
+    "text": "닥쳐! 너 오늘 샤워실 풍차돌리기도 못 하게 팔다리 다 분질러버릴 거야!!!",
+    "next": "gahi_punch_8"
+  },
+  "gahi_punch_8": {
+    "bg": "kaist_night_bg",
+    "chars": [
+      { "name": "장가희", "image": "gahi_angry", "focus": false },
+      { "name": "제상후", "image": "sang_extreme_sad", "focus": true, "eff": "bounce" }
+    ],
+    "speaker": "제상후",
+    "text": "장풍!!! 장풍!!! 제발 그만하세노!!! 가희 네놈, 사실은 격투가였노?!",
+    "next": "gahi_punch_9"
+  },
+  "gahi_punch_9": {
+    "bg": "kaist_night_bg",
+    "chars": [
+      { "name": "장가희", "image": "gahi_angry", "focus": true }
+    ],
+    "speaker": " ",
+    "text": "가희의 니킥이 상후의 복부에 꽂혔다. 상후는 그대로 바닥을 기며 뻐끔거렸다.",
+    "next": "gahi_punch_10"
+  },
+  "gahi_punch_10": {
+    "bg": "kaist_night_bg",
+    "chars": [
+      { "name": "장가희", "image": "gahi_angry", "focus": true },
+      { "name": "제상후", "image": "sang_sad", "focus": false }
+    ],
+    "speaker": "장가희",
+    "text": "한 번만 더 내 노트북 건드리면 그땐 냥코고 지오데시고 다 끝이야. 알겠어?",
+    "next": "gahi_punch_11"
+  },
+  "gahi_punch_11": {
+    "bg": "kaist_night_bg",
+    "chars": [
+      { "name": "장가희", "image": "gahi_angry", "focus": false },
+      { "name": "제상후", "image": "sang_sad", "focus": true }
+    ],
+    "speaker": "제상후",
+    "text": "(바닥에서) ...네... 가희님... 잘못했습뉘다아아악... 깍...",
+    "next": "GOTO_MANAGEMENT"
+  }
+}

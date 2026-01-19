@@ -1,0 +1,198 @@
+{
+  "mt_full_1": {
+    "bg": "mt_bus_inside",
+    "bgm": "bgm_ominous",
+    "speaker": " ",
+    "text": "학과 MT 당일 아침. 제상후는 기숙사 침대 위에서 비장한 표정으로 냥코 대전쟁의 통조림을 수급하고 있었다.",
+    "next": "mt_full_2"
+  },
+  "mt_full_2": {
+    "bg": "mt_bus_inside",
+    "chars": [
+      { "name": "제상후", "image": "sang_normal", "focus": true }
+    ],
+    "speaker": "제상후",
+    "text": "MT... Mobile Time의 약자지. 이동하면서 게임하기 딱 좋은 날이다아아악!",
+    "next": "mt_full_3"
+  },
+  "mt_full_3": {
+    "bg": "mt_bus_inside",
+    "chars": [
+      { "name": "제상후", "image": "sang_happy", "focus": false, "eff": "shake" }
+    ],
+    "speaker": " ",
+    "text": "대형 버스 안. 상후는 맨 뒷자리에 앉아 지오메트리 대쉬의 스테이지를 무한 반복하며 노래를 따라 부른다.",
+    "next": "mt_full_4"
+  },
+  "mt_full_4": {
+    "bg": "mt_bus_inside",
+    "chars": [
+      { "name": "제상후", "image": "sang_happy", "focus": false, "eff": "shake" }
+    ],
+    "speaker": "과대",
+    "text": "혹시 상후 씨, 뭐 하세요...?",
+    "next": "mt_full_5"
+  },
+  "mt_full_5": {
+    "bg": "mt_resort_hall",
+    "chars": [
+      { "name": "제상후", "image": "sang_normal", "focus": false, "eff": "shake" }
+    ],
+    "speaker": " ",
+    "text": "드디어 도착한 숙소. 장기자랑의 시간이 왔다. 상후는 조용히 무대 뒤에서 냥코 덱을 점검한다.",
+    "next": "mt_choice_1"
+  },
+  "mt_choice_1": {
+    "bg": "mt_resort_hall",
+    "chars": [
+      { "name": "제상후", "image": "sang_normal", "focus": false, "eff": "shake" }
+    ],
+    "speaker": "시스템",
+    "text": "장기자랑 무대에서 제상후는 무엇을 보여줄까?",
+    "choices": [
+      { "text": "냥코 대전쟁 '우주편' 실시간 클리어", "next": "route_nyanko", "score": -5},
+      { "text": "무리수 π(파이) 8초 컷 랩핑", "next": "route_pi", "score": 0 }
+    ]
+  },
+  "route_nyanko": {
+    "bg": "mt_stage_bg",
+    "bgm": "bgm_nyanko_boss",
+    "chars": [
+      { "name": "제상후", "image": "sang_happy", "focus": true, "eff": "bounce" }
+    ],
+    "speaker": "제상후",
+    "text": "보여주마! 이것이 '카이'의 진정한 힘이다! 장풍! 장풍! 장풍!!!",
+    "next": "mt_nyanko_reaction"
+  },
+  "mt_nyanko_reaction1": {
+    "bg": "mt_stage_bg",
+    "chars": [
+      { "name": "제상후", "image": "sang_happy", "focus": false, "eff": "bounce" }
+    ],
+    "speaker": "학생들",
+    "text": "(침묵)",
+    "next": "mt_nyanko_reaction2"
+  },
+  "mt_nyanko_reaction2": {
+    "bg": "mt_stage_bg",
+    "chars": [
+      { "name": "제상후", "image": "sang_happy", "focus": false, "eff": "bounce" }
+    ],
+    "speaker": "과대",
+    "text": "와.... 와..!!!!",
+    "next": "mt_nyanko_reaction3"
+  },
+  "mt_nyanko_reaction3": {
+    "bg": "mt_stage_bg",
+    "chars": [
+      { "name": "제상후", "image": "sang_happy", "focus": false, "eff": "bounce" }
+    ],
+    "speaker": "학생들",
+    "text": "와.... 와..!!!!",
+    "next": "mt_gahi_appear"
+  },
+  "route_pi": {
+    "bg": "mt_stage_bg",
+    "bgm": "bgm_fast_techno",
+    "chars": [
+      { "name": "제상후", "image": "sang_shout", "focus": true, "eff": "shake" }
+    ],
+    "speaker": "제상후",
+    "text": "3.1415926535897932384626433... 아아아악!! 내 혀가 무리수를 감당하지 못하노!!",
+    "next": "mt_pi_reaction"
+  },
+  "mt_pi_reaction": {
+    "bg": "mt_stage_bg",
+    "speaker": "학생들",
+    "text": "(침묵) ...진짜 미친놈이다. 안보고 8초만에...",
+    "next": "mt_gahi_appear"
+  },
+  "mt_gahi_appear": {
+    "bg": "outside_night",
+    "bgm": "bgm_quiet_night",
+    "speaker": " ",
+    "text": "밤이 깊어지고, 술자리를 피해 밖으로 나온 상후. 그곳엔 장가희가 휠체어 대신 편의점 의자에 앉아 있었다.",
+    "next": "mt_full_6"
+  },
+  "mt_full_6": {
+    "bg": "outside_night",
+    "chars": [
+      { "name": "장가희", "image": "gahi_normal", "focus": true },
+      { "name": "제상후", "image": "sang_sad", "focus": false }
+    ],
+    "speaker": "장가희",
+    "text": "상후야, 아까 무대에서 소리 지르는 거 봤어. 너 그러다 진짜 성대 결절 온다.",
+    "next": "mt_full_7"
+  },
+  "mt_full_7": {
+    "bg": "outside_night",
+    "chars": [
+      { "name": "장가희", "image": "gahi_normal", "focus": false },
+      { "name": "제상후", "image": "sang_sad", "focus": true, "eff": "shake" }
+    ],
+    "speaker": "제상후",
+    "text": "가희 네놈... 나를 동정하는 거냐? 중딩 때 길냥이 밥 주려고 70만 원 태운 네놈이?!",
+    "next": "mt_full_8"
+  },
+  "mt_full_8": {
+    "bg": "outside_night",
+    "chars": [
+      { "name": "장가희", "image": "gahi_angry", "focus": true, "eff": "zoom" },
+      { "name": "제상후", "image": "sang_sad", "focus": false }
+    ],
+    "speaker": "장가희",
+    "text": "그 얘긴 꺼내지 말라고 했지!! 그건 내가 순수해서 그런 거였고, 너는 그냥 사회부적응자잖아!!",
+    "next": "mt_choice_2"
+  },
+  "mt_choice_2": {
+    "bg": "outside_night",
+    "speaker": "시스템",
+    "text": "격분한 장가희에게 상후는 어떤 반응을 보일까?",
+    "choices": [
+      { "text": "갑자기 뻐끔거리며 붕어 흉내 내기", "next": "route_fish", "score": -5 },
+      { "text": "진지하게 π의 500자리까지 외워주기", "next": "route_pi_respect", "score": 0 }
+    ]
+  },
+  "route_fish": {
+    "bg": "outside_night",
+    "chars": [
+      { "name": "제상후", "image": "sang_normal", "focus": true, "eff": "bounce" }
+    ],
+    "speaker": "제상후",
+    "text": "(뻐끔... 뻐끔...) 나는 온도가 없다... 물속에선 소리도 안 들린다노...",
+    "next": "mt_gahi_kick"
+  },
+  "mt_gahi_kick": {
+    "bg": "outside_night",
+    "chars": [
+      { "name": "장가희", "image": "gahi_kick", "focus": true, "eff": "shake" }
+    ],
+    "speaker": "장가희",
+    "text": "아악!!! 미친년!!! (장가희의 분노의 드롭킥이 상후의 옆구리에 꽂힌다)",
+    "next": "mt_ending"
+  },
+  "route_pi_respect": {
+    "bg": "outside_night",
+    "chars": [
+      { "name": "제상후", "image": "sang_normal", "focus": true }
+    ],
+    "speaker": "제상후",
+    "text": "가희야... 너의 분노는 3.14... 이 숫자의 나열처럼 끝이 없구나. 내가 다 외워줄게. 들어라.",
+    "next": "mt_gahi_confused"
+  },
+  "mt_gahi_confused": {
+    "bg": "outside_night",
+    "chars": [
+      { "name": "장가희", "image": "gahi_sad", "focus": true }
+    ],
+    "speaker": "장가희",
+    "text": "하... 진짜 너 같은 놈은 태어나서 처음 봐. 근데 왜 끝까지 듣게 되는 거지...",
+    "next": "mt_ending"
+  },
+  "mt_ending": {
+    "bg": "mt_bus_inside",
+    "speaker": " ",
+    "text": "다음 날 새벽, MT 장소의 운동장. 상후는 비몽사몽 한 상태로 '장풍!'을 외치며 셔틀버스에 몸을 실었다.",
+    "next": "GOTO_MANAGEMENT"
+  }
+}

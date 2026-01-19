@@ -8,37 +8,37 @@ export const Story = {
     isPaused: false,
     audioManager: null,
     Manager: null,
-    scenario: {},      // 현재 로드된 챕터의 데이터가 담김
+    scenario: {},
     currentChapter: "prologue", 
 
   
-async loadChapter(chapterKey) {
-    try {
-        // 1. manifest.json 위치를 정확히 지정 (루트에 있으면 ./manifest.json)
-        console.log("매니페스트 로드 시도...");
-        const manifestRes = await fetch("./manifest.json"); 
-        
-        if (!manifestRes.ok) throw new Error("manifest.json 파일을 찾을 수 없습니다.");
-        
-        const manifest = await manifestRes.json();
-        const path = manifest.chapters[chapterKey];
-        
-        console.log(`${chapterKey} 데이터 로드 시도: ${path}`);
-        
-        // 2. 시나리오 JSON 로드
-        const response = await fetch(path);
-        
-        if (!response.ok) throw new Error(`${path} 파일을 찾을 수 없습니다.`);
-        
-        this.scenario = await response.json();
-        this.currentChapter = chapterKey;
-        
-        console.log(`챕터 로드 완료: ${chapterKey}`);
-    } catch (e) {
-        console.error("챕터 로드 실패:", e);
-        throw e; // 상위 handleStartButton에서 catch할 수 있게 던짐
-    }
-},
+    async loadChapter(chapterKey) {
+        try {
+            // 1. manifest.json 위치를 정확히 지정 (루트에 있으면 ./manifest.json)
+            console.log("매니페스트 로드 시도...");
+            const manifestRes = await fetch("./manifest.json"); 
+            
+            if (!manifestRes.ok) throw new Error("manifest.json 파일을 찾을 수 없습니다.");
+            
+            const manifest = await manifestRes.json();
+            const path = manifest.chapters[chapterKey];
+            
+            console.log(`${chapterKey} 데이터 로드 시도: ${path}`);
+            
+            // 2. 시나리오 JSON 로드
+            const response = await fetch(path);
+            
+            if (!response.ok) throw new Error(`${path} 파일을 찾을 수 없습니다.`);
+            
+            this.scenario = await response.json();
+            this.currentChapter = chapterKey;
+            
+            console.log(`챕터 로드 완료: ${chapterKey}`);
+        } catch (e) {
+            console.error("챕터 로드 실패:", e);
+            throw e; // 상위 handleStartButton에서 catch할 수 있게 던짐
+        }
+    },
   
     init() { 
       this.log = [];
@@ -132,7 +132,6 @@ async loadChapter(chapterKey) {
                 b.innerText = c.text;
                 b.onclick = (e) => {
                     e.stopPropagation();
-                    // play choice sfx if set
                     if (c.sfx) this.audioManager.playSFX(c.sfx);
                     this.affinity += (c.score || 0);
                     this.currentScene = c.next;
@@ -184,7 +183,7 @@ async loadChapter(chapterKey) {
         if (data.next === "GOTO_MANAGEMENT") {
             UI.showNotice("스토리가 종료되었습니다.\n자기관리를 시작합니다.", () => {
         this.Manager.switchToManagement();
-    });
+        });
             return;
         }
         if (data.next) { 

@@ -3,7 +3,18 @@
         "prologue": "./prologue.json",
         "proxy_class": "./proxy_class.json",
         "cat_war": "./cat_war.json",
-        "sparrow": "./sparrow.json"
+        "sparrow": "./sparrow.json",
+        "mainstory_0": "./mainstory_-10.json",
+        "mainstory_1": "./mainstory_1.json",
+        "mainstory_2": "./mainstory_2.json",
+        "mainstory_3": "./mainstory_3.json",
+        "mainstory_4": "./mainstory_4.json",
+        "mainstory_5": "./mainstory_5.json",
+        "mainstory_6": "./mainstory_6.json",
+        "mainstory_7": "./mainstory_7.json",
+        "mainstory_8": "./mainstory_8.json",
+        "mainstory_9": "./mainstory_9.json",
+        "mainstory_10": "./mainstory_10.json"
     },
     "startChapter": "prologue"
 }

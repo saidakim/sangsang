@@ -1,0 +1,167 @@
+{
+  "obesity_1": {
+    "bg": "sang_room_bg",
+    "bgm": "bgm_heavy_slow",
+    "speaker": " ",
+    "text": "전산동 기숙사 D동. 방 안에는 먹다 남은 치킨 박스와 라면 용기가 지층처럼 쌓여 있다. 그 중심에 제상후가 누워 있다.",
+    "next": "obesity_2"
+  },
+  "obesity_2": {
+    "bg": "sang_room_bg",
+    "chars": [
+      { "name": "제상후", "image": "sang_fat", "focus": true, "eff": "bounce" }
+    ],
+    "speaker": "제상후",
+    "text": "뚠뚠... 뚠뚠... 이제는 숨쉬는 것도 지오메트리 대쉬 익스트림 데몬 난이도 같노... 헉... 헉...",
+    "next": "obesity_3"
+  },
+  "obesity_3": {
+    "bg": "sang_room_bg",
+    "chars": [
+      { "name": "제상후", "image": "sang_fat", "focus": true }
+    ],
+    "speaker": "제상후",
+    "text": "하지만 칼로리는 $\\pi$처럼 무한해야 한다아아악! 배달 앱... 결제... 깍! 깍!",
+    "next": "obesity_choice_1"
+  },
+  "obesity_choice_1": {
+    "bg": "sang_room_bg",
+    "speaker": "시스템",
+    "text": "폭식으로 인해 몸이 무거워진 상후, 지금 당장 먹고 싶은 야식은?",
+    "choices": [
+      { "text": "마라탕 4단계 (분모자 3.14kg 추가)", "next": "route_malatang", "score": -5 },
+      { "text": "고양이 통조림 모양 초콜릿 100개", "next": "route_cat_choco", "score": 0 }
+    ]
+  },
+  "route_malatang": {
+    "bg": "sang_room_bg",
+    "bgm": "bgm_fast_techno",
+    "chars": [
+      { "name": "제상후", "image": "sang_fat", "focus": true, "eff": "shake" }
+    ],
+    "speaker": "제상후",
+    "text": "아악!!! 맵다!!! 이건 미각에 대한 장풍이다!!! 땀이 수돗물처럼 흐르노!!!",
+    "next": "obesity_4"
+  },
+  "route_cat_choco": {
+    "bg": "sang_room_bg",
+    "chars": [
+      { "name": "제상후", "image": "sang_fat", "focus": true, "eff": "bounce" }
+    ],
+    "speaker": "제상후",
+    "text": "오오... 달다... 냥코 에너지가 혈관을 타고 흐르는 게 느껴진다노! 뚠뚠뚠뚠!",
+    "next": "obesity_4"
+  },
+  "obesity_4": {
+    "bg": "sang_room_bg",
+    "speaker": " ",
+    "sfx": "sfx_bed_creak",
+    "text": "그때였다. 상후가 몸을 뒤척이자 기숙사 철제 침대에서 비명 섞인 금속음이 들려왔다.",
+    "next": "obesity_5"
+  },
+  "obesity_5": {
+    "bg": "sang_room_bg",
+    "chars": [
+      { "name": "제상후", "image": "sang_fat", "focus": true, "eff": "shake" }
+    ],
+    "speaker": "제상후",
+    "text": "어...? 침대가... 침대가 내 질량을 거부하노? 이건 뉴턴의 법칙 위반이다아아악!!!",
+    "next": "obesity_6"
+  },
+  "obesity_6": {
+    "bg": "sang_room_bg",
+    "speaker": " ",
+    "sfx": "sfx_crash",
+    "text": "쿠궁! 육중한 소리와 함께 침대 프레임이 V자로 꺾이며 상후가 바닥으로 처박혔다. 그 소리에 옆 방 장가희가 들이닥친다.",
+    "next": "obesity_7"
+  },
+  "obesity_7": {
+    "bg": "sang_room_bg",
+    "chars": [
+      { "name": "장가희", "image": "gahi_disgust", "focus": true },
+      { "name": "제상후", "image": "sang_stuck", "focus": false }
+    ],
+    "speaker": "장가희",
+    "text": "제상후!!! 너 또 뭘... 히익! 뭐야 이 굴러다니는 거대한 건?! 너 사람 맞어?!",
+    "next": "obesity_8"
+  },
+  "obesity_8": {
+    "bg": "sang_room_bg",
+    "chars": [
+      { "name": "장가희", "image": "gahi_disgust", "focus": false },
+      { "name": "제상후", "image": "sang_stuck", "focus": true, "eff": "shake" }
+    ],
+    "speaker": "제상후",
+    "text": "가희 네놈... 나를 보고 '거대 고양이'라고 부르는 거냐? 뻐끔... 뻐끔...",
+    "next": "obesity_9"
+  },
+  "obesity_9": {
+    "bg": "sang_room_bg",
+    "chars": [
+      { "name": "장가희", "image": "gahi_angry", "focus": true, "eff": "zoom" },
+      { "name": "제상후", "image": "sang_stuck", "focus": false }
+    ],
+    "speaker": "장가희",
+    "text": "고양이는커녕 멧돼지 같거든?! 당장 일어나! 너 오늘부터 내가 강제 다이어트 시킬 거야!",
+    "next": "obesity_choice_2"
+  },
+  "obesity_choice_2": {
+    "bg": "sang_room_bg",
+    "speaker": "시스템",
+    "text": "장가희가 운동장 100바퀴를 뛰라고 협박한다. 상후의 대응은?",
+    "choices": [
+      { "text": "구르기로 도망치기 시도", "next": "route_roll", "score": -5 },
+      { "text": "지방의 탄성을 이용한 '배 장풍' 공격", "next": "route_belly_blast", "score": 0 }
+    ]
+  },
+  "route_roll": {
+    "bg": "kaist_corridor",
+    "chars": [
+      { "name": "제상후", "image": "sang_rolling", "focus": true, "eff": "bounce" }
+    ],
+    "speaker": "제상후",
+    "text": "데굴데굴데굴!!! 마찰 계수 무시!!! 나는 구르는 무리수다아아아악!!!",
+    "next": "obesity_10"
+  },
+  "route_belly_blast": {
+    "bg": "sang_room_bg",
+    "chars": [
+      { "name": "제상후", "image": "sang_fat", "focus": true, "eff": "shake" }
+    ],
+    "speaker": "제상후",
+    "text": "이것이 나의 '지방층 쉴드'다! 깍! 가희 네놈의 주먹은 내 복부에 흡수된다노!",
+    "next": "obesity_10"
+  },
+  "obesity_10": {
+    "bg": "kaist_night_bg",
+    "speaker": " ",
+    "text": "결국 상후는 장가희에게 질질 끌려 운동장으로 나왔다. 밤하늘엔 상후의 비명과 땀 냄새가 진동한다.",
+    "next": "obesity_11"
+  },
+  "obesity_11": {
+    "bg": "kaist_night_bg",
+    "chars": [
+      { "name": "장가희", "image": "gahi_angry", "focus": true },
+      { "name": "제상후", "image": "sang_fat", "focus": false }
+    ],
+    "speaker": "장가희",
+    "text": "빨리 안 뛰어?! 너 1kg 빠질 때마다 냥코 통조림 1개씩 깔 수 있게 해준다니까!",
+    "next": "obesity_12"
+  },
+  "obesity_12": {
+    "bg": "kaist_night_bg",
+    "chars": [
+      { "name": "장가희", "image": "gahi_angry", "focus": false },
+      { "name": "제상후", "image": "sang_fat", "focus": true, "eff": "shake" }
+    ],
+    "speaker": "제상후",
+    "text": "하아... 하아...  가희님... 차라리 나를 죽여주세노... 3.14... 3.1... (기절)",
+    "next": "obesity_epilogue"
+  },
+  "obesity_epilogue": {
+    "bg": "kaist_night_bg",
+    "speaker": " ",
+    "text": "다음 날 아침, 운동장에는 상후가 흘린 땀으로 거대한 $\\pi$ 모양의 자국이 남았다고 한다. 비만 전설의 서막이었다.",
+    "next": "GOTO_MANAGEMENT"
+  }
+}
