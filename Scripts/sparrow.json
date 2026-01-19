@@ -18,7 +18,7 @@
   "sparrow_3": {
     "bg": "kaist_bg",
     "chars": [
-      { "name": "참새", "image": "sparrow_normal", "focus": true, "eff": "bounce" },
+      { "name": "참새", "image": "sparrow_angry", "focus": true, "eff": "bounce" },
       { "name": "제상후", "image": "sang_normal", "focus": false }
     ],
     "speaker": "참새",
@@ -39,7 +39,7 @@
   "sparrow_5": {
     "bg": "kaist_bg",
     "chars": [
-      { "name": "참새", "image": "sparrow_fly", "focus": true, "eff": "zoom" },
+      { "name": "참새", "image": "sparrow_normal", "focus": true, "eff": "zoom" },
       { "name": "제상후", "image": "sang_angry", "focus": false }
     ],
     "speaker": " ",
@@ -49,6 +49,7 @@
   "sparrow_6": {
     "bg": "kaist_bg",
     "chars": [
+      { "name": "참새", "image": "sparrow_angry", "focus": false, "eff": "bounce" },
       { "name": "제상후", "image": "sang_angry", "focus": true, "eff": "bounce" }
     ],
     "speaker": "제상후",
@@ -58,6 +59,7 @@
   "sparrow_7": {
     "bg": "kaist_bg",
     "chars": [
+      { "name": "참새", "image": "sparrow_normal", "focus": false, "eff": "bounce" },
       { "name": "제상후", "image": "sang_angry", "focus": true, "eff": "shake" }
     ],
     "speaker": " ",

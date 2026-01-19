@@ -95,7 +95,7 @@
   "cat_war_11": {
     "bg": "kaist_bg",
     "chars": [
-      { "name": "길고양이", "image": "cat_staring", "focus": true },
+      { "name": "길고양이", "image": "cat_normal", "focus": true },
       { "name": "제상후", "image": "sang_normal", "focus": false }
     ],
     "speaker": "길고양이",

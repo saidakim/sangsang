@@ -319,22 +319,19 @@ export const Manager = {
         }
     },
     switchToManagement() {
-        console.log("육성 모드로 전환합니다."); // 연결 확인용
-
-        // 1. 대화창 레이어 숨기기
+        console.log("육성 모드 진입");
+        UI.hideAllOverlays(); // 일단 다 끄기
+        
+        // 1. 대화창 숨기기
         const uiLayer = document.getElementById('ui-layer');
         uiLayer.classList.add('hidden');
-        uiLayer.style.opacity = "0";
 
-        // 2. 육성 모드 레이어 보이기
+        // 2. 육성 레이어 켜기
         const mgmtLayer = document.getElementById('management-layer');
-        mgmtLayer.classList.remove('hidden');
-        // 중요: 기존 CSS의 .full-overlay 스타일을 적용받기 위해 'active' 추가
-        mgmtLayer.classList.add('active'); 
+        mgmtLayer.classList.add('active');
 
-        // 3. UI 데이터 갱신
         this.updateUI();
-    }
+    },
 };
 
 window.Manager = Manager;

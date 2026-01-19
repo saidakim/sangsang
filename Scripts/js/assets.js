@@ -7,6 +7,7 @@ export const assets = {
         "sang_happy": "https://raw.githubusercontent.com/saidakim/sangsang/main/assets/sang_happy.png",
         "sang_angry": "https://raw.githubusercontent.com/saidakim/sangsang/main/assets/sang_angry.png",
         "sang_siluet": "https://raw.githubusercontent.com/saidakim/sangsang/main/assets/sang_siluet.png",
+        "sang_fat": "https://raw.githubusercontent.com/saidakim/sangsang/main/assets/sang_fat.png",
       
       
         "gahi_normal": "https://raw.githubusercontent.com/saidakim/sangsang/main/assets/gahi_normal.png",
@@ -15,8 +16,21 @@ export const assets = {
         "gahi_happy": "https://raw.githubusercontent.com/saidakim/sangsang/main/assets/gahi_happy.png",
         "gahi_angry": "https://raw.githubusercontent.com/saidakim/sangsang/main/assets/gahi_angry.png",
         "gahi_siluet": "https://raw.githubusercontent.com/saidakim/sangsang/main/assets/gahi_siluet.png",
+        "gahi_disgust": "https://raw.githubusercontent.com/saidakim/sangsang/main/assets/gahi_disgust.png",
       
-      
+
+        "jooheon_angry": "https://raw.githubusercontent.com/saidakim/sangsang/main/assets/jooheon_angry.png",
+        "jooheon_normal": "https://raw.githubusercontent.com/saidakim/sangsang/main/assets/jooheon_normal.png",
+
+
+        "sparrow_angry": "https://raw.githubusercontent.com/saidakim/sangsang/main/assets/sparrow_angry.png",
+        "sparrow_normal": "https://raw.githubusercontent.com/saidakim/sangsang/main/assets/sparrow_normal.png",
+
+
+        "cat_angry": "https://raw.githubusercontent.com/saidakim/sangsang/main/assets/cat_angry.png",
+        "cat_normal": "https://raw.githubusercontent.com/saidakim/sangsang/main/assets/cat_normal.png",
+
+
         "sang_phone": "https://raw.githubusercontent.com/saidakim/sangsang/main/assets/sang_phone.png",
         "sang_phone_alert": "https://raw.githubusercontent.com/saidakim/sangsang/main/assets/sang_phone_alert.png",
       

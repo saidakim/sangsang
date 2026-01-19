@@ -1,6 +1,16 @@
 // js/main.js
 // manager.js 또는 전역 공통 함수로 추가
 export const UI = {
+
+    hideAllOverlays() {
+        const overlays = document.querySelectorAll('.full-overlay');
+        overlays.forEach(el => {
+            el.classList.remove('active');
+            // 인라인 스타일로 display가 들어갔을 경우를 대비해 제거
+            el.style.display = ""; 
+        });
+    },
+
     showNotice(text, onConfirm) {
         const modal = document.getElementById('notice-modal');
         const textEl = document.getElementById('notice-text');

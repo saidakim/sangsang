@@ -59,16 +59,14 @@ export const Story = {
         this.isPaused = false;
 
         // 1. 모든 오버레이(메뉴, 육성 화면 등) 제거
-        document.querySelectorAll('.full-overlay').forEach(el => {
-            el.classList.remove('active');
-        });
+        UI.hideAllOverlays();
+
 
         // 2. [핵심] UI 레이어(대화창) 복구
         const uiLayer = document.getElementById('ui-layer');
-        uiLayer.classList.remove('hidden', 'opacity-0');
-        uiLayer.style.display = "block"; // 또는 flex (CSS 설정에 따라)
+        uiLayer.classList.remove('hidden');
+        uiLayer.style.display = "block"; 
         uiLayer.style.opacity = "1";
-        uiLayer.style.pointerEvents = "auto";
 
         // 3. 캐릭터 레이어 초기화 (이전 육성 시 남은 잔상 제거)
         document.getElementById('character-layer').innerHTML = "";

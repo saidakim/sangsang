@@ -49,31 +49,49 @@ export const Save = {
         UI.showNotice(`슬롯 ${slotIndex}에 저장되었습니다.`);
     }, 
 
-    async loadFromSlot(slotIndex) { // [수정] async 추가
+async loadFromSlot(slotIndex) {
         const saved = localStorage.getItem(`vn_ultimate_slot_${slotIndex}`);
         if (!saved) return;
 
         const d = JSON.parse(saved);
 
         try {
-            // 1. [핵심] 저장된 챕터 파일부터 먼저 로드한다.
+            // 1. 모든 팝업 및 메뉴 레이어 초기화 (가장 중요)
+            // 타이틀 메뉴, 커스텀 모달, 엔딩 레이어 등을 모두 숨깁니다.
+            document.querySelectorAll('.full-overlay').forEach(el => {
+                el.classList.remove('active');
+                el.style.display = "none"; 
+            });
+
+            // 2. 데이터 복구
             if (d.chapter) {
                 await this.story.loadChapter(d.chapter);
             }
 
-            // 2. 스토리 정보 복구
             this.story.currentScene = d.scene;
             this.story.affinity = d.affinity;
 
             // 3. 매니저(육성) 데이터 복구
-            Manager.setData(d);
+            if (Manager.setData) {
+                Manager.setData(d);
+            } else {
+                // setData가 없을 경우를 대비한 직접 할당
+                Manager.stats = { ...d.stats };
+                Manager.day = d.day;
+                Manager.updateUI();
+            }
 
-            // 4. UI 복구 및 시작
-            // 만약 육성 모드 상태에서 저장했다면 육성 화면으로, 아니면 스토리로
+            // 4. 장면 데이터 확인
             const sceneData = this.story.scenario[d.scene];
+
+            // 5. 모드에 따른 실행 (핵심)
+            // 만약 저장된 장면의 다음 단계가 육성 모드라면 바로 육성 모드로 진입
             if (sceneData && sceneData.next === "GOTO_MANAGEMENT") {
+                console.log("육성 모드로 복구합니다.");
                 Manager.switchToManagement();
             } else {
+                console.log("스토리 모드로 복구합니다.");
+                // startGame 내부에서 ui-layer를 보이게 처리하므로 호출
                 this.story.startGame();
             }
 
@@ -83,5 +101,5 @@ export const Save = {
             console.error("로드 중 오류 발생:", e);
             UI.showNotice("데이터를 불러오는 데 실패했습니다.");
         }
-    }
+    },
 };
