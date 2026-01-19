@@ -1,7 +1,7 @@
 {
   "start": {
     "bg": "kaist_night_bg",
-    "bgm": "bgm_suspense",
+    "bgm": "bgm_burger",
     "speaker": " ",
     "text": "밤늦은 시간, 전산동의 어두운 복도. 제상후는 누군가에게 가로막혀 식은땀을 흘리고 있다.",
     "next": "proxy_start_2"

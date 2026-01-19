@@ -1,7 +1,7 @@
 {
   "start": {
     "bg": "kaist_bg",
-    "bgm": "bgm_warrior",
+    "bgm": "bgm_jazz1",
     "speaker": " ",
     "text": "밤 11시, 카이스트 서측 기숙사 뒤편. 인적이 끊긴 이곳에 기괴한 그림자 하나가 어른거린다.",
     "next": "cat_war_2"

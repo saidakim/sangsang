@@ -1,7 +1,7 @@
 {
   "start": {
     "bg": "kaist_bg",
-    "bgm": "bgm_peaceful",
+    "bgm": "bgm_jazz2",
     "speaker": " ",
     "text": "어느 오후, 상후는 광합성을 하기 위해 카이스트 근처를 배회하고 있다.",
     "next": "sparrow_2"

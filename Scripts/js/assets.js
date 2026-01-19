@@ -29,6 +29,9 @@ export const assets = {
     audio: {
         "bgm_menu": { url: "https://raw.githubusercontent.com/saidakim/sangsang/main/assets/sanddit2.mp3", loop:true, volume:0.45 },
         "bgm_school": { url: "https://raw.githubusercontent.com/saidakim/sangsang/main/assets/sanddit.mp3", loop:true, volume:0.5 },
+        "bgm_burger": { url: "https://raw.githubusercontent.com/saidakim/sangsang/main/assets/burger.mp3", loop:true, volume:0.5 },
+        "bgm_jazz1": { url: "https://raw.githubusercontent.com/saidakim/sangsang/main/assets/jazz1.mp3", loop:true, volume:0.5 },
+        "bgm_jazz2": { url: "https://raw.githubusercontent.com/saidakim/sangsang/main/assets/jazz2.mp3", loop:true, volume:0.5 },
         "bgm_off": { url: "data:audio/mp3;base64,//uQZAAAAAAAAAAAAAAAAAAAA", loop:true, volume:0.5 },
 
 
