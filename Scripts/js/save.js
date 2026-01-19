@@ -20,8 +20,8 @@ export const Save = {
             if (savedData) {
                 const parsed = JSON.parse(savedData);
                 // 슬롯 이름에 현재 날짜 정보도 표시하면 더 좋음
-                const dayInfo = parsed.day ? `[Day ${parsed.day}] ` : "";
-                slot.innerHTML = `<div><span class="text-indigo-400 font-bold text-xs mr-2">SLOT ${i}</span><span class="text-white text-sm">${dayInfo}${parsed.sceneName}</span></div>`;
+                const affinityInfo = parsed.affinity ? `[진행도: ${parsed.affinity}] ` : "";
+                slot.innerHTML = `<div><span class="text-indigo-400 font-bold text-xs mr-2">SLOT ${i}</span><span class="text-white text-sm">${affinityInfo}${parsed.sceneName}</span></div>`;
             } else { slot.innerHTML = `<span class="text-gray-600 font-bold">SLOT ${i} EMPTY</span>`; }
             slot.onclick = () => { modal.classList.remove('active'); callback(i); };
             slotList.appendChild(slot);

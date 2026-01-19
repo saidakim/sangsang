@@ -1,0 +1,349 @@
+{
+    "start": {
+        "bg": "kaist_bg",
+        "bgm": "bgm_jazz4",
+        "speaker": " ",
+        "text": "어느 날 오후, 카이스트 207호 대형 강의실 앞은 인파로 가득 찼다.",
+        "next": "step11_2"
+    },
+    "step11_2": {
+        "bg": "kaist_bg",
+        "speaker": "학생 A",
+        "text": "야, 진짜 박보검이 온대? 장가희가 초청했다는데?",
+        "next": "step11_3"
+    },
+    "step11_3": {
+        "bg": "kaist_bg",
+        "chars": [
+            { "name": "장가희", "image": "gahi_normal", "focus": true, "eff": "zoom" }
+        ],
+        "speaker": "장가희",
+        "text": "모두 조용! 지금부터 특강을 시작하겠어. 주제는 '분자결합의 철학적 고찰'이다.",
+        "next": "step11_4"
+    },
+    "step11_4": {
+        "bg": "kaist_bg",
+        "chars": [
+            { "name": "장가희", "image": "gahi_normal", "focus": false }
+        ],
+        "speaker": "학생들",
+        "text": "뭐야! 박보검 어디 갔어! 낚인 거야?!",
+        "next": "step11_5"
+    },
+    "step11_5": {
+        "bg": "kaist_bg",
+        "chars": [
+            { "name": "장가희", "image": "gahi_happy", "focus": true }
+        ],
+        "speaker": "장가희",
+        "text": "진정해, 미친새끼들아. 니네가 왔잖아. 박보검으로 3행시 할게. 운 띄워 봐.",
+        "next": "step11_6"
+    },
+    "step11_6": {
+        "bg": "kaist_bg",
+        "speaker": "학생들",
+        "text": "박!",
+        "next": "step11_7"
+    },
+    "step11_7": {
+        "bg": "kaist_bg",
+        "chars": [
+            { "name": "장가희", "image": "gahi_normal", "focus": true }
+        ],
+        "speaker": "장가희",
+        "text": "박준영.",
+        "next": "step11_8"
+    },
+    "step11_8": {
+        "bg": "kaist_bg",
+        "speaker": "학생들",
+        "text": "보!",
+        "next": "step11_9"
+    },
+    "step11_9": {
+        "bg": "kaist_bg",
+        "chars": [
+            { "name": "장가희", "image": "gahi_normal", "focus": true }
+        ],
+        "speaker": "장가희",
+        "text": "(침묵)",
+        "next": "step11_10"
+    },
+    "step11_10": {
+        "bg": "kaist_bg",
+        "speaker": "학생들",
+        "text": "검!",
+        "next": "step11_11"
+    },
+    "step11_11": {
+        "bg": "kaist_bg",
+        "chars": [
+            { "name": "장가희", "image": "gahi_normal", "focus": true }
+        ],
+        "speaker": "장가희",
+        "text": "검은색.",
+        "next": "step11_12"
+    },
+    "step11_12": {
+        "bg": "kaist_bg",
+        "chars": [
+            { "name": "박준영", "image": "junyoung_normal", "focus": true, "eff": "shake" }
+        ],
+        "speaker": "박준영",
+        "text": "아 아니야~! 아니라구!!! (얼굴이 빨개지며)",
+        "next": "step11_13"
+    },
+    "step11_13": {
+        "bg": "kaist_bg",
+        "chars": [
+            { "name": "장가희", "image": "gahi_happy", "focus": true }
+        ],
+        "speaker": "장가희",
+        "text": "이제 본론이지. '상보적 결합'으로 5행시 간다. 운 띄워.",
+        "next": "step11_14"
+    },
+    "step11_14": {
+        "bg": "kaist_bg",
+        "speaker": "학생들",
+        "text": "상!",
+        "next": "step11_15"
+    },
+    "step11_15": {
+        "bg": "kaist_bg",
+        "chars": [
+            { "name": "장가희", "image": "gahi_normal", "focus": true }
+        ],
+        "speaker": "장가희",
+        "text": "상후.",
+        "next": "step11_16"
+    },
+    "step11_16": {
+        "bg": "kaist_bg",
+        "speaker": "학생들",
+        "text": "보!",
+        "next": "step11_17"
+    },
+    "step11_17": {
+        "bg": "kaist_bg",
+        "chars": [
+            { "name": "장가희", "image": "gahi_normal", "focus": true }
+        ],
+        "speaker": "장가희",
+        "text": "(침묵)",
+        "next": "step11_18"
+    },
+    "step11_18": {
+        "bg": "kaist_bg",
+        "speaker": "학생들",
+        "text": "적!",
+        "next": "step11_19"
+    },
+    "step11_19": {
+        "bg": "kaist_bg",
+        "chars": [
+            { "name": "장가희", "image": "gahi_normal", "focus": true }
+        ],
+        "speaker": "장가희",
+        "text": "적색.",
+        "next": "step11_20"
+    },
+    "step11_20": {
+        "bg": "kaist_bg",
+        "speaker": " ",
+        "text": "그 순간, 모든 학생들이 어이없다는 듯 강의실을 빠져나갔다.",
+        "next": "step11_21"
+    },
+    "step11_21": {
+        "bg": "kaist_bg",
+        "chars": [
+            { "name": "제상후", "image": "sang_wow", "focus": true, "eff": "shake" }
+        ],
+        "speaker": "제상후",
+        "text": "뭐하세요. 아아아악!!!! 보!!!! 보!!!!!!!! 보오오!!!!!!!!!!!!!",
+        "next": "step11_22"
+    },
+    "step11_22": {
+        "bg": "kaist_bg",
+        "chars": [
+            { "name": "장가희", "image": "gahi_happy", "focus": true }
+        ],
+        "speaker": "장가희",
+        "text": "상보적 결합 진짜임? 넌 이제 내 손바닥 안이야.",
+        "next": "step11_23"
+    },
+    "step11_23": {
+        "bg": "kaist_bg",
+        "speaker": " ",
+        "text": "상후는 가희를 피해 서울로 도망쳤지만, 가희가 뿌려둔 전단지 때문에 결국 다시 끌려오고 말았다.",
+        "next": "step12_1"
+    },
+    "step12_1": {
+        "bg": "kaist_night_bg",
+        "bgm": "bgm_tension",
+        "speaker": " ",
+        "text": "며칠 후 카이스트 정문. 검은 SUV에서 한 남자가 내렸다.",
+        "next": "step12_2"
+    },
+    "step12_2": {
+        "bg": "kaist_night_bg",
+        "chars": [
+            { "name": "프랑수아", "image": "prangsua_normal", "focus": true, "eff": "bounce" }
+        ],
+        "speaker": "학생 B",
+        "text": "쟤가 그 MIT에서 전학 온다는 '플랑크상수맨' 아니야?",
+        "next": "step12_3"
+    },
+    "step12_3": {
+        "bg": "kaist_night_bg",
+        "chars": [
+            { "name": "제상후", "image": "sang_angry", "focus": true }
+        ],
+        "speaker": "제상후",
+        "text": "진짜 뭐임. 난 π의 남자. 아아아악!! 야스.",
+        "next": "step12_4"
+    },
+    "step12_4": {
+        "bg": "kaist_night_bg",
+        "chars": [
+            { "name": "프랑수아", "image": "prangsua_normal", "focus": true }
+        ],
+        "speaker": "프랑수아",
+        "text": "넌 유머가 아니야. 넌 값이야. 난 개념이지. (프랑스어로)",
+        "next": "step12_5"
+    },
+    "step12_5": {
+        "bg": "kaist_night_bg",
+        "chars": [
+            { "name": "프랑수아", "image": "prangsua_normal", "focus": true }
+        ],
+        "speaker": "프랑수아",
+        "text": "장가희는 이제 내 것이다.",
+        "next": "step12_6"
+    },
+    "step12_6": {
+        "bg": "kaist_night_bg",
+        "chars": [
+            { "name": "제상후", "image": "sang_sad", "focus": true, "eff": "shake" }
+        ],
+        "speaker": "제상후",
+        "text": "아아아악!! 3.141592653... 장가희를 개 주자니 아깝다아아악!!!",
+        "next": "step12_7"
+    },
+    "step12_7": {
+        "bg": "class_bg",
+        "speaker": " ",
+        "text": "나노재료동 세미나실. 상수 vs 결합, 누가 더 낭만적인가 결투가 시작됐다.",
+        "next": "step12_8"
+    },
+    "step12_8": {
+        "bg": "class_bg",
+        "chars": [
+            { "name": "장가희", "image": "gahi_normal", "focus": true }
+        ],
+        "speaker": "장가희",
+        "text": "결투 방식은 5행시다. '플랑크상보'로 가겠어. 운 띄워.",
+        "next": "step12_9"
+    },
+    "step12_9": {
+        "bg": "class_bg",
+        "speaker": "학생들",
+        "text": "플!!",
+        "next": "step12_10"
+    },
+    "step12_10": {
+        "bg": "class_bg",
+        "chars": [
+            { "name": "장가희", "image": "gahi_normal", "focus": true }
+        ],
+        "speaker": "장가희",
+        "text": "플랑크상수맨.",
+        "next": "step12_11"
+    },
+    "step12_11": {
+        "bg": "class_bg",
+        "speaker": "학생들",
+        "text": "랑!!",
+        "next": "step12_12"
+    },
+    "step12_12": {
+        "bg": "class_bg",
+        "chars": [
+            { "name": "장가희", "image": "gahi_normal", "focus": true }
+        ],
+        "speaker": "장가희",
+        "text": "제상후.",
+        "next": "step12_13"
+    },
+    "step12_13": {
+        "bg": "class_bg",
+        "speaker": "학생들",
+        "text": "크!!",
+        "next": "step12_14"
+    },
+    "step12_14": {
+        "bg": "class_bg",
+        "chars": [
+            { "name": "장가희", "image": "gahi_normal", "focus": true }
+        ],
+        "speaker": "장가희",
+        "text": "미친새끼.",
+        "next": "step12_15"
+    },
+    "step12_15": {
+        "bg": "class_bg",
+        "speaker": "학생들",
+        "text": "상!!",
+        "next": "step12_16"
+    },
+    "step12_16": {
+        "bg": "class_bg",
+        "chars": [
+            { "name": "장가희", "image": "gahi_normal", "focus": true }
+        ],
+        "speaker": "장가희",
+        "text": "상후.",
+        "next": "step12_17"
+    },
+    "step12_17": {
+        "bg": "class_bg",
+        "speaker": "학생들",
+        "text": "보!!",
+        "next": "step12_18"
+    },
+    "step12_18": {
+        "bg": "class_bg",
+        "chars": [
+            { "name": "장가희", "image": "gahi_normal", "focus": true }
+        ],
+        "speaker": "장가희",
+        "text": "(침묵, 프랑스어)",
+        "next": "step12_19"
+    },
+    "step12_19": {
+        "bg": "class_bg",
+        "chars": [
+            { "name": "제상후", "image": "sang_wow", "focus": true, "eff": "shake" }
+        ],
+        "speaker": "제상후",
+        "text": "아아아아악!!! 미친새끼냐!",
+        "next": "step12_20"
+    },
+    "step12_20": {
+        "bg": "class_bg",
+        "chars": [
+            { "name": "프랑수아", "image": "prangsua_normal", "focus": true }
+        ],
+        "speaker": "프랑수아",
+        "text": "6.626곱하기10의마이너스34승.. (마오리어)",
+        "next": "step12_21"
+    },
+    "step12_21": {
+        "bg": "class_bg",
+        "chars": [
+            { "name": "장가희", "image": "gahi_normal", "focus": true }
+        ],
+        "speaker": "장가희",
+        "text": "다 꺼져",
+        "next": "GOTO_MANAGEMENT"
+    }
+}

@@ -1,0 +1,292 @@
+{
+    "start": {
+        "bg": "class_bg",
+        "bgm": "bgm_jazz3",
+        "speaker": " ",
+        "text": "2026년 1학기. KAIST 본관 CCTV에는 기괴한 장면이 포착되기 시작했다.",
+        "next": "step15_2"
+    },
+    "step15_2": {
+        "bg": "class_bg",
+        "speaker": "보안 요원",
+        "text": "저기... 복도에서 입만 뻐끔거리며 걷는 저 남자, 또 나타났습니다.",
+        "next": "step15_3"
+    },
+    "step15_3": {
+        "bg": "kaist_bg",
+        "speaker": "학생처 공지",
+        "text": "[긴급] 특정 학생의 '붕어입 퍼포먼스' 금지 요청. 학내 정서를 심각하게 교란시키고 있음.",
+        "next": "step15_4"
+    },
+    "step15_4": {
+        "bg": "kaist_bg",
+        "speaker": "담당자",
+        "text": "조사 결과... 그냥 제상후입니다. 조치 불가능합니다.",
+        "next": "step15_5"
+    },
+    "step15_5": {
+        "bg": "class_bg",
+        "bgm": "bgm_normal",
+        "speaker": "나레이션",
+        "text": "사건의 시작 - 뻐끔 1일차. 전산학부 이산수학 수업 시간.",
+        "next": "step15_6"
+    },
+    "step15_6": {
+        "bg": "class_bg",
+        "speaker": "교수",
+        "text": "자, 오늘은 이산수학 정리부터 할게요. 상후 군, 대답해볼까요?",
+        "next": "step15_7"
+    },
+    "step15_7": {
+        "bg": "class_bg",
+        "chars": [
+            { "name": "제상후", "image": "sang_fish", "focus": true, "eff": "zoom" }
+        ],
+        "speaker": "제상후",
+        "text": "…………뻐끔…",
+        "next": "step15_8"
+    },
+    "step15_8": {
+        "bg": "class_bg",
+        "chars": [
+            { "name": "장가희", "image": "gahi_angry", "focus": true, "eff": "shake" },
+            { "name": "제상후", "image": "sang_fish", "focus": false }
+        ],
+        "speaker": "장가희",
+        "text": "아 씨발. 너 지금 뭐 한 거야?",
+        "next": "step15_9"
+    },
+    "step15_9": {
+        "bg": "class_bg",
+        "chars": [
+            { "name": "제상후", "image": "sang_fish", "focus": true }
+        ],
+        "speaker": "제상후",
+        "text": "닥치세요. (붕어어로)",
+        "next": "step15_10"
+    },
+    "step15_10": {
+        "bg": "class_bg",
+        "chars": [
+            { "name": "장가희", "image": "gahi_angry", "focus": true }
+        ],
+        "speaker": "장가희",
+        "text": "아니 미친놈아 여긴 캠퍼스고 물이 없잖아!",
+        "next": "step15_11"
+    },
+    "step15_11": {
+        "bg": "class_bg",
+        "chars": [
+            { "name": "제상후", "image": "sang_fish", "focus": true, "eff": "bounce" }
+        ],
+        "speaker": "제상후",
+        "text": "싸닥치세요. 뻐끔.",
+        "next": "step15_12"
+    },
+    "step15_12": {
+        "bg": "kaist_bg",
+        "speaker": "나레이션",
+        "text": "학식 테러 - 뻐끔 2일차.",
+        "next": "step15_13"
+    },
+    "step15_13": {
+        "bg": "kaist_bg",
+        "chars": [
+            { "name": "제상후", "image": "sang_fish", "focus": true }
+        ],
+        "speaker": "제상후",
+        "text": "뻐끔... 뻐끔... 김치찌개 뻐끔...",
+        "next": "step15_14"
+    },
+    "step15_14": {
+        "bg": "kaist_bg",
+        "speaker": "뒤에 있던 학생",
+        "text": "죄송한데... 방금 뭐라고 말씀하신 거예요?",
+        "next": "step15_15"
+    },
+    "step15_15": {
+        "bg": "kaist_bg",
+        "chars": [
+            { "name": "제상후", "image": "sang_wow", "focus": true, "eff": "shake" }
+        ],
+        "speaker": "제상후",
+        "text": "아아아아아악!!!................뻐끔",
+        "next": "step15_16"
+    },
+    "step15_16": {
+        "bg": "kaist_bg",
+        "chars": [
+            { "name": "장가희", "image": "gahi_wow", "focus": true }
+        ],
+        "speaker": "장가희",
+        "text": "씨발 상후야 너 진짜 왜 이래!!",
+        "next": "step15_17"
+    },
+    "step15_17": {
+        "bg": "class_bg",
+        "bgm": "bgm_fight",
+        "speaker": "나레이션",
+        "text": "연구실 광기 - 뻐끔 5일차. 팀플 발표 리허설 중.",
+        "next": "step15_18"
+    },
+    "step15_18": {
+        "bg": "class_bg",
+        "speaker": "교수",
+        "text": "제상후 학생, 본인 파트 발표해보세요.",
+        "next": "step15_19"
+    },
+    "step15_19": {
+        "bg": "class_bg",
+        "chars": [
+            { "name": "제상후", "image": "sang_normal", "focus": true }
+        ],
+        "speaker": "제상후",
+        "text": "(화면에 냥코 고양이 사진을 띄우며)\n이것은 고양이입니다. 그리고... 뻐끔.",
+        "next": "step15_20"
+    },
+    "step15_20": {
+        "bg": "class_bg",
+        "speaker": "교수",
+        "text": "...? 말씀이 안 들리는데요?",
+        "next": "step15_21"
+    },
+    "step15_21": {
+        "bg": "class_bg",
+        "chars": [
+            { "name": "제상후", "image": "sang_fish", "focus": true, "eff": "shake" }
+        ],
+        "speaker": "제상후",
+        "text": "뻐끔! 뻐끔! 뻐끔! 뻐끔! 뻐끔!",
+        "next": "step15_22"
+    },
+    "step15_22": {
+        "bg": "class_bg",
+        "speaker": "교수",
+        "text": "낙제입니다. 나가세요.",
+        "next": "step15_23"
+    },
+    "step15_23": {
+        "bg": "kaist_bg",
+        "bgm": "bgm_sad",
+        "speaker": "나레이션",
+        "text": "붕어 대면 - 장가희의 심문. 도서관 앞 벤치.",
+        "next": "step15_24"
+    },
+    "step15_24": {
+        "bg": "kaist_bg",
+        "chars": [
+            { "name": "장가희", "image": "gahi_normal", "focus": true }
+        ],
+        "speaker": "장가희",
+        "text": "이젠 말 좀 해라. 왜 입만 오므리는 건데?",
+        "next": "step15_25"
+    },
+    "step15_25": {
+        "bg": "kaist_bg",
+        "chars": [
+            { "name": "제상후", "image": "sang_fish", "focus": true }
+        ],
+        "speaker": "제상후",
+        "text": "(속삭이며) 뻐끔.",
+        "next": "step15_26"
+    },
+    "step15_26": {
+        "bg": "kaist_bg",
+        "chars": [
+            { "name": "장가희", "image": "gahi_disgust", "focus": true, "eff": "shake" }
+        ],
+        "speaker": "장가희",
+        "text": "씨발 입냄새 개좆되네.",
+        "next": "step15_27"
+    },
+    "step15_27": {
+        "bg": "kaist_bg",
+        "chars": [
+            { "name": "제상후", "image": "sang_fish", "focus": true, "eff": "bounce" }
+        ],
+        "speaker": "제상후",
+        "text": "뻐끔! 뻐끔! 뻐끔!",
+        "next": "step15_28"
+    },
+    "step15_28": {
+        "bg": "kaist_bg",
+        "chars": [
+            { "name": "장가희", "image": "gahi_angry", "focus": true }
+        ],
+        "speaker": "장가희",
+        "text": "죽여버리고 싶다 정말.",
+        "next": "step15_29"
+    },
+    "step15_29": {
+        "bg": "kaist_playground_bg",
+        "bgm": "bgm_fast",
+        "speaker": "나레이션",
+        "text": "이후 상후의 광기는 폭주했다. 운동장에서 수영복을 입고 파이를 외우며 뻐끔거렸다.",
+        "next": "step15_30"
+    },
+    "step15_30": {
+        "bg": "kaist_playground_bg",
+        "chars": [
+            { "name": "제상후", "image": "sang_fish", "focus": true }
+        ],
+        "speaker": "제상후",
+        "text": "뻐끔뻐끔뻐끔뻐끔... 3.14159... 뻐끔!",
+        "next": "step15_31"
+    },
+    "step15_31": {
+        "bg": "kaist_playground_bg",
+        "speaker": "캠퍼스 전체 알림",
+        "text": "[경고] 제상후 학생이 '자가 수중화' 중입니다. 물이 없어도 젖은 상태입니다. (줄여서 상젖상)",
+        "next": "step15_32"
+    },
+    "step15_32": {
+        "bg": "kaist_night_bg",
+        "bgm": "bgm_off",
+        "speaker": "나레이션",
+        "text": "에필로그 - 벚꽃 아래, 붕어.",
+        "next": "step15_33"
+    },
+    "step15_33": {
+        "bg": "kaist_night_bg",
+        "chars": [
+            { "name": "장가희", "image": "gahi_normal", "focus": true }
+        ],
+        "speaker": "장가희",
+        "text": "밤 산책 중에 벤치에 앉아있는 상후를 발견했다. 녀석은 이어폰을 끼고 있었다.",
+        "next": "step15_34"
+    },
+    "step15_34": {
+        "bg": "kaist_night_bg",
+        "speaker": " ",
+        "sfx": "sfx_fish_loop",
+        "text": "(이어폰에서 새어 나오는 소리: 뻐끔... 뻐끔... 뻐끔...)",
+        "next": "step15_35"
+    },
+    "step15_35": {
+        "bg": "kaist_night_bg",
+        "chars": [
+            { "name": "장가희", "image": "gahi_normal", "focus": true }
+        ],
+        "speaker": "장가희",
+        "text": "자기 목소리를 녹음해서 듣고 있네... 상후야, 너 진짜 붕어가 되고 싶은 거야?",
+        "next": "step15_36"
+    },
+    "step15_36": {
+        "bg": "kaist_night_bg",
+        "chars": [
+            { "name": "제상후", "image": "sang_fish", "focus": true }
+        ],
+        "speaker": "제상후",
+        "text": "(눈을 감고 말없이 입만 오므린다) 뻐끔.",
+        "next": "step15_37"
+    },
+    "step15_37": {
+        "bg": "kaist_night_bg",
+        "chars": [
+            { "name": "장가희", "image": "gahi_happy", "focus": true, "eff": "zoom" }
+        ],
+        "speaker": "장가희",
+        "text": "...나도 이상하게 정든다. 뻐끔새끼야.",
+        "next": "GOTO_MANAGEMENT"
+    }
+}

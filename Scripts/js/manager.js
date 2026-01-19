@@ -270,12 +270,12 @@ export const Manager = {
                     this.stats.charm = Math.max(0, this.stats.charm - 5);
                     this.stats.stress = Math.max(0, this.stats.stress - 20);
                     this.updateUI();
-                    this.switchToStory("prologue", "start");
+                    this.switchToStory("hospital", "start");
                 });
             }
             else if(this.affinity_flag){
                 this.affinity_flag = false;
-                UI.showNotice("제상후에 스텟에 따라 호감도가 변화하였습니다.\n메인 스토리가 진행됩니다.", () => {
+                UI.showNotice("호감도가 변화하였습니다.\n메인 스토리가 진행됩니다.", () => {
                     let storyNumber = this.Story.affinity / 10;
                     this.switchToStory("mainstory_" + storyNumber, "start");
                 });

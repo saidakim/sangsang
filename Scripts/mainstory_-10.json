@@ -1,7 +1,7 @@
 {
   "start": {
     "bg": "kaist_night_bg",
-    "bgm": "bgm_angry_piano",
+    "bgm": "bgm_fight",
     "speaker": " ",
     "text": "전산동 복도 한복판. 장가희의 인내심이 마침내 임계점을 돌파했다.",
     "next": "gahi_punch_2"

@@ -79,7 +79,7 @@
     "bg": "sang_room_bg",
     "chars": [
       { "name": "장가희", "image": "gahi_disgust", "focus": true },
-      { "name": "제상후", "image": "sang_stuck", "focus": false }
+      { "name": "제상후", "image": "sang_fat", "focus": false }
     ],
     "speaker": "장가희",
     "text": "제상후!!! 너 또 뭘... 히익! 뭐야 이 굴러다니는 거대한 건?! 너 사람 맞어?!",
@@ -89,7 +89,7 @@
     "bg": "sang_room_bg",
     "chars": [
       { "name": "장가희", "image": "gahi_disgust", "focus": false },
-      { "name": "제상후", "image": "sang_stuck", "focus": true, "eff": "shake" }
+      { "name": "제상후", "image": "sang_fat", "focus": true, "eff": "shake" }
     ],
     "speaker": "제상후",
     "text": "가희 네놈... 나를 보고 '거대 고양이'라고 부르는 거냐? 뻐끔... 뻐끔...",
@@ -99,7 +99,7 @@
     "bg": "sang_room_bg",
     "chars": [
       { "name": "장가희", "image": "gahi_angry", "focus": true, "eff": "zoom" },
-      { "name": "제상후", "image": "sang_stuck", "focus": false }
+      { "name": "제상후", "image": "sang_fat", "focus": false }
     ],
     "speaker": "장가희",
     "text": "고양이는커녕 멧돼지 같거든?! 당장 일어나! 너 오늘부터 내가 강제 다이어트 시킬 거야!",

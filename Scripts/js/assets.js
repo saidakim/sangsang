@@ -8,6 +8,7 @@ export const assets = {
         "sang_angry": "https://raw.githubusercontent.com/saidakim/sangsang/main/assets/sang_angry.png",
         "sang_siluet": "https://raw.githubusercontent.com/saidakim/sangsang/main/assets/sang_siluet.png",
         "sang_fat": "https://raw.githubusercontent.com/saidakim/sangsang/main/assets/sang_fat.png",
+        "sang_fish": "https://raw.githubusercontent.com/saidakim/sangsang/main/assets/sang_fish.png",
       
       
         "gahi_normal": "https://raw.githubusercontent.com/saidakim/sangsang/main/assets/gahi_normal.png",
@@ -31,6 +32,12 @@ export const assets = {
         "cat_normal": "https://raw.githubusercontent.com/saidakim/sangsang/main/assets/cat_normal.png",
 
 
+        "prangsua_normal": "https://raw.githubusercontent.com/saidakim/sangsang/main/assets/prangsua_normal.png",
+        
+        "junyoung_normal": "https://raw.githubusercontent.com/saidakim/sangsang/main/assets/junyoung_normal.png",
+
+
+
         "sang_phone": "https://raw.githubusercontent.com/saidakim/sangsang/main/assets/sang_phone.png",
         "sang_phone_alert": "https://raw.githubusercontent.com/saidakim/sangsang/main/assets/sang_phone_alert.png",
       
@@ -46,6 +53,9 @@ export const assets = {
         "bgm_burger": { url: "https://raw.githubusercontent.com/saidakim/sangsang/main/assets/burger.mp3", loop:true, volume:0.5 },
         "bgm_jazz1": { url: "https://raw.githubusercontent.com/saidakim/sangsang/main/assets/jazz1.mp3", loop:true, volume:0.5 },
         "bgm_jazz2": { url: "https://raw.githubusercontent.com/saidakim/sangsang/main/assets/jazz2.mp3", loop:true, volume:0.5 },
+        "bgm_jazz3": { url: "https://raw.githubusercontent.com/saidakim/sangsang/main/assets/jazz3.mp3", loop:true, volume:0.5 },
+        "bgm_jazz4": { url: "https://raw.githubusercontent.com/saidakim/sangsang/main/assets/jazz4.mp3", loop:true, volume:0.5 },
+        "bgm_fight": { url: "https://raw.githubusercontent.com/saidakim/sangsang/main/assets/fight.mp3", loop:true, volume:0.5 },
         "bgm_off": { url: "data:audio/mp3;base64,//uQZAAAAAAAAAAAAAAAAAAAA", loop:true, volume:0.5 },
 
 
